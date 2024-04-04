@@ -1,0 +1,31 @@
+.genres-container {
+  margin: 20px;
+}
+
+.subgenres-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
+  gap: 5px; /* Margin around items */
+}
+
+.subgenre-item {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  padding-top: 50%; /* Height is half of the width */
+  position: relative;
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.subgenre-item::before {
+  content: '';
+  float: left;
+  padding-top: 100%; /* This maintains the aspect ratio */
+}
+
+.subgenre-item > * {
+  position: absolute;
+}
