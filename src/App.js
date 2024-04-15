@@ -1,24 +1,24 @@
-// App.jsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import GenrePage from './components/GenreComponents/GenrePage/GenrePage';
-import AccountDropdown from './components/universal/AccountDropdown/AccountDropdown';
-import NavigationBar from './components/universal/NavigationBar/NavigationBar';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="header-container">
-        <NavigationBar />
-      </div>
-      <Routes>
-        // Route to genre page by default
-        
-        {/* Define the route for the GenrePage */}
-        <Route path="/genres" element={<GenrePage />} />
-        {/* <Route path="/artists" element={<ArtistsPage />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 

@@ -24,15 +24,6 @@
   color: white;
 }
 
-/* Assuming this is defined in App.css or a similar global stylesheet */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Ensure it spans the full width */
-}
-
-
 .App-link {
   color: #61dafb;
 }
