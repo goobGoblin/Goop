@@ -1,0 +1,556 @@
+{
+  "Genre": "Pop",
+  "Description": "Umbrella of popular styles closely tied to mass production and mass marketing, focusing on catchiness and accessibility through melody, rhythm, lyrics, and hooks.",
+  "Subgenres": {
+    "Adult Contemporary": {
+      "Description": "Slow to midtempo with a light and soothing tone, emerged as a successful radio format in the late 1970s and early 1980s."
+    },
+    "Afrobeats": {
+      "Description": "Originated in West Africa during the early 2010s and includes elements from Pop Rap, Contemporary R&B, and Dancehall.",
+      "Subgenres": {
+        "Afropiano": {
+          "Description": "Blends the easy-going, poppy, and melodic Afrobeats sound and rhythms with major Amapiano elements, like lush, jazzy, and laid-back atmospheres often featuring light piano chords."
+        },
+        "Alté": {
+          "Description": "More subdued, atmospheric, minimalist, and eclectic production and vocal styles compared to earlier styles, as well as more socially conscious lyrics."
+        }
+      }
+    },
+    "Alt-Pop": {
+      "Description": "Emerged in the late 2000s and early 2010s, combines chart Pop conventions with alternative/indie genre sensibilities sometimes on a more minimal and contemplative atmosphere, often extracted from Alternative R&B."
+    },
+    "Arabic Pop": {
+      "Description": "Synthesis of Arabic Music with Western Pop melodies, almost always sung in Arabic and typically performed with Arabic instruments, alongside some Western instruments like the guitar.",
+      "Subgenres": {
+        "Al jeel": {
+          "Description": "Emerged in the 1970s as an alternative to Shaabi, taking influence from foreign Pop and incorporating rhythms of Reggae while retaining a distinctly Egyptian sound."
+        }
+      }
+    },
+    "Art Pop": {
+      "Description": "Artistic, inventive and singular presentation and performance, often featuring poetic or oblique lyricism, and frequently subverting and experimenting with various other genres and art forms while remaining fairly Pop-oriented and accessible."
+    },
+    "Balkan Pop-Folk": {
+      "Description": "Balkan popular music which blends Pop, Folk, and ethnic music.",
+      "Subgenres": {
+        "Chalga": {
+          "Description": "Bulgarian blend of Contemporary Folk (Turkish, Bulgarian, Arabic & Romani) with Dance-Pop."
+        },
+        "Manele": {
+          "Description": "Mixture of Romanian Music with Turkish, Middle Eastern, Balkan, and Romani influences, usually electronic in production."
+        },
+        "Modern Laika": {
+          "Description": "Laiki music mixed with popular Western music, most notably pop and dance."
+        },
+        "Musika popullore": {
+          "Description": "Tradition in Albania consisting of light, commercial, amplified Albanian Folk Music usually professionally arranged and manufactured in recording studios alongside video clips."
+        },
+        "Muzică de mahala": {
+          "Description": "Appeared in the 1980s, incorporating modern instruments and based on the model of Balkan Pop-Folk in neighboring countries."
+        },
+        "Skiladika": {
+          "Description": "Greek popular artists who used more Arabian elements; originally a derogatory term used to refer to a more decadent side of Laika."
+        },
+        "Tallava": {
+          "Description": "Mixture of Romani, Greek, Turkish, Albanian, and Slavic music, which incorporates Dance-Pop elements, and is very popular in Albania and Kosovo."
+        },
+        "Turbo-Folk": {
+          "Description": "Originated in Serbia during the 1980s, fusing traditional Western Balkan Folk Music with elements of contemporary popular music."
+        }
+      }
+    },
+    "Baroque Pop": {
+      "Description": "Incorporates elements of Western Classical Music, commonly featuring harpsichord or strings as well as the rhythmic flow and counterpoint of Baroque Music."
+    },
+    "Bitpop": {
+      "Description": "Fuses Bit Music with additional synths, beats, guitars and modern production values, emphasizing highly catchy melodies and relatively fast tempos."
+    },
+    "Blue-Eyed Soul": {
+      "Description": "Usually refers to a Pop or Pop Rock song that contains strong Gospel-like elements, primarily popularized by white American and British singers in the 1960s through the 1980s."
+    },
+    "Boy Band": {
+      "Description": "Male vocal groups often put together by talent managers or record producers."
+    },
+    "Brega calypso": {
+      "Description": "Romantic vocals and lyrics, bubbly and sensual melodies and rhythms, horn sections and lush Caribbean-like guitar riffs over fast tempos."
+    },
+    "Brill Building": {
+      "Description": "Elaborate, polished, and typically melodramatic composition and arrangement associated with the songwriting teams at the Brill office building during the late 1950s and early 1960s."
+    },
+    "Bubblegum": {
+      "Description": "Upbeat, catchy, simple, and targeted at children and young teens; especially popular in the 1960s and 1970s."
+    },
+    "Cambodian Pop": {
+      "Description": "Popular music produced in Cambodia or by Khmer people.",
+      "Subgenres": {
+        "Rom kbach": {
+          "Description": "Cambodian pop with a slow melody that is similar to Luk thung."
+        }
+      }
+    },
+    "Canción melódica": {
+      "Description": "Sentimental vocal music sung in Spanish with a focus on the chorus, originally developed in the first half of the 20th century from a variety of traditional Hispanic genres.",
+      "Subgenres": {
+        "Bolero-Beat": {
+          "Description": "Latin American style stemming from both Canción melódica and the British Beat Music."
+        },
+        "Música cebolla": {
+          "Description": "Chilean offshoot of Canción melódica that expresses a much more melancholic or nostalgic side."
+        }
+      }
+    },
+    "CCM": {
+      "Description": "Popular music focused on Christian spirituality and faith.",
+      "Subgenres": {
+        "Praise & Worship": {
+          "Description": "Christian music with lyrics focused on the greatness of God."
+        }
+      }
+    },
+    "City Pop": {
+      "Description": "Wave of Japanese Pop intended to reflect urban life during the period of the country's booming economy in the 1970s and 1980s, featuring a contemporary Western sound and lush arrangements."
+    },
+    "Classical Crossover": {
+      "Description": "Takes specific Western Classical Music conventions and applies them into a straightforward Pop context for mainstream appeal."
+    },
+    "Country Pop": {
+      "Description": "Combination of Country with Pop to appeal to a larger audience.",
+      "Subgenres": {
+        "Bro-Country": {
+          "Description": "21st century style with an often party-oriented sound and lyrical content, taking strong influence from Hip Hop & Pop."
+        },
+        "Countrypolitan": {
+          "Description": "Emphasizes Pop-oriented orchestration and songwriting while reducing the role of Country instrumentation and rhythms; often featuring lush string arrangements and group backing vocals."
+        },
+        "Urban Cowboy": {
+          "Description": "Melds country and Pop (best described as 70s L.A. soft pop), and sometimes leans towards Disco."
+        }
+      }
+    },
+    "C-Pop": {
+      "Description": "Commercialized pop performed by Chinese communities across China and Taiwan, alongside its large diaspora.",
+      "Subgenres": {
+        "Cantopop": {
+          "Description": "Cantonese-language Pop with its heyday in the 1980s and early 1990s."
+        },
+        "Mandopop": {
+          "Description": "C-Pop in which songs are performed in Mandarin."
+        },
+        "Zhongguo feng": {
+          "Description": "Inspired by traditional elements of Chinese Music with lyrical themes constantly revolving around Chinese culture and tales."
+        }
+      }
+    },
+    "Dance-Pop": {
+      "Description": "Simple, yet catchy melodies and throbbing beats inspired initially by Disco and later various House styles.",
+      "Subgenres": {
+        "Bubblegum Dance": {
+          "Description": "Playful, childlike style with a Bubblegum-like atmosphere that often incorporates high-pitched, light-hearted, and usually female-fronted vocals."
+        },
+        "Disco polo": {
+          "Description": "Polish Dance-Pop, originally established from contemporary wedding / feast songs and Italo-Disco."
+        },
+        "Freestyle": {
+          "Description": "Electro-influenced; developed in Latino communities in New York and Miami in the 1980s, especially dominated by Latin Freestyle and its Latin influences.",
+          "Subgenres": {
+            "Latin Freestyle": {
+              "Description": "Displays a heavy influence of Hispanic American Music alongside the Disco, Hip Hop, and Electro influences of Freestyle."
+            }
+          }
+        },
+        "Funk melody": {
+          "Description": "Light and melodic take on Funk brasileiro, developed alongside Funk carioca."
+        },
+        "Romanian Popcorn": {
+          "Description": "Emerged in the second half of the 2000s in Romania, often featuring brass melodies and 'staccato' pluck grooves."
+        },
+        "Tecnorumba": {
+          "Description": "Blend of the themes and singing style of Rumba flamenca with the most commercial forms of House, Techno, and Makina."
+        },
+        "Township Bubblegum": {
+          "Description": "Synth-heavy Dance-Pop style popular in the South African townships in the 1980s and early 1990s."
+        }
+      }
+    },
+    "Dangdut": {
+      "Description": "Indonesian popular music distinguished by a rhythmic blend of Indian, Arabic, Western, Malay, Sundanese, and Javanese influences within Indonesian Music, characterized by a unique rhythmic pattern from kendang.",
+      "Subgenres": {
+        "Dangdut koplo": {
+          "Description": "Development of Javanese Dangdut which originated in Indonesia in the 1990s, featuring a faster tempo and influences from international styles like Pop, Rock, and Reggae."
+        }
+      }
+    },
+    "Dansbandsmusik": {
+      "Description": "Nordic Pop style originating from 1960s Pop Rock, incorporating Swing, Schlager, Nordic Old Time Dance Music and Country influences."
+    },
+    "Dansktop": {
+      "Description": "Danish equivalent to Dansbandsmusik with Schlager and Country influences and Contemporary Folk and Pop elements."
+    },
+    "Denpa": {
+      "Description": "Underground Japanese Pop aiming to be bizarre yet catchy, using off-key vocals, strange or nonsensical lyrics, repetitive chants, onomatopoeia, frantic, 'off-kilter' production, and 'moe' vocals and aesthetics."
+    },
+    "Electropop": {
+      "Description": "Dense, layered, and compressed production, usually coupled with a distinct fuzzy and 'warm' low-frequency synthesizer style."
+    },
+    "Europop": {
+      "Description": "Emerged throughout mainland Europe in the early 1970s, referring to slick, highly commercial Pop songs that emphasize sugary melodies and light, bouncy instrumentation."
+    },
+    "Flamenco Pop": {
+      "Description": "Originally developed in the mid 1960s, incorporated palos flamencos (Flamenco subgenres) and Copla into the format of feisty and lively Pop (particularly, Yé-yé)."
+    },
+    "Folk Pop": {
+      "Description": "Blends Contemporary Folk with a Pop sensibility, most popular in the late 1960s and early 1970s and featuring influence from the contemporary Folk Rock style.",
+      "Subgenres": {
+        "Stomp and Holler": {
+          "Description": "Highlights driving 'stomping' rhythms and shouted group vocal harmonies, often drawing influences from Pop Rock, Indie Folk, and other genres, while maintaining a characteristically mellow and commercial sound."
+        }
+      }
+    },
+    "French Pop": {
+      "Description": "Pop originating from France."
+    },
+    "Girl Group": {
+      "Description": "Combines elements of Rhythm & Blues, Rock & Roll, and Traditional Pop; typically performed by trios or quartets of female vocalists."
+    },
+    "Glitch Pop": {
+      "Description": "Incorporates elements of more experimental Electronic styles like IDM and Glitch."
+    },
+    "Hyperpop": {
+      "Description": "Developed and took inspiration from Bubblegum Bass and popular 2000s-2010s Electropop, characterized by eclectic, unconventional, mechanical-sounding and dense production; and by manipulated, usually auto-tuned vocals."
+    },
+    "Indian Pop": {
+      "Description": "Commonly based out of India, Pakistan and Bangladesh and almost always sung in Hindi, Urdu or Bengali, implements South Asian Music in context of American and European Pop and Rock music."
+    },
+    "Indie Pop": {
+      "Description": "Back-to-basics Rock approach combining a less mainstream and DIY ethos with melodic, lighthearted and straightforward songwriting.",
+      "Subgenres": {
+        "Bedroom Pop": {
+          "Description": "Named for solo producers and singer-songwriters from the 2010s onward who created intimate, 'authentic' music in their own homes, outside of a traditional studio environment."
+        },
+        "C86": {
+          "Description": "Distinctly ramshackle, often Twee Pop-infused combination of British Indie Rock and Jangle Pop."
+        },
+        "Chamber Pop": {
+          "Description": "Based on the smooth and melodic songwriting of Lounge and other Easy Listening, as well as the orchestration of Baroque Pop and the production styles of other 1960s pop genres."
+        },
+        "Neo-Acoustic": {
+          "Description": "Japanese term for a cross-section of Indie Pop and Jangle Pop with more prominent acoustic instrumentation and songwriting/arrangements that draw from Sophisti-Pop."
+        },
+        "Sonido Donosti": {
+          "Description": "Sentimental and melancholic scene, influenced by Twee Pop, that emerged in the late 1980s in Donostia / San Sebastián, Spain."
+        },
+        "Tontipop": {
+          "Description": "Spanish scene known for its exuberant, child-like sound drawing directly from British Twee Pop, as well as Yé-yé, Bubblegum, and Synthpop."
+        },
+        "Twee Pop": {
+          "Description": "Distinct Post-Punk background and often jangling guitars, defined by a cute aesthetic and lyrics combined with an indie/DIY attitude and a simplicity often indebted to Punk Rock."
+        }
+      }
+    },
+    "Irish Showband": {
+      "Description": "Phenomenon lasting from the mid-1950s until the early 1980s, often performed a mixture of currently popular music and skits."
+    },
+    "Italo Pop": {
+      "Description": "Romantic style developed in Italy in the late 1950s including various influences such as Chanson and Schlager.",
+      "Subgenres": {
+        "Canzone neomelodica": {
+          "Description": "Elements are derived from Canzone napoletana."
+        }
+      }
+    },
+    "Jazz Pop": {
+      "Description": "Pop that incorporates elements from Jazz."
+    },
+    "J-Pop": {
+      "Description": "Commercial Pop of Japan after the advent of the Heisei era (1989), characterized by modernized production, a more eclectic sound palette, and a more westernized vocal style.",
+      "Subgenres": {
+        "Akishibu-kei": {
+          "Description": "Otaku inclined update of the style pioneered by the Shibuya-kei scene, mixed with J-Pop and often tied to Anime and video game music."
+        },
+        "Yakousei": {
+          "Description": "Eclectic scene from Japan popularized in the late 2010s; characterized by Dance-influenced rhythms, Indie Pop and Indie Rock's approaches to composition and a focus on vocal delivery and introspective lyricism."
+        }
+      }
+    },
+    "Kayōkyoku": {
+      "Description": "Japanese popular music prominent during the later period of the Shōwa era (early 1950s to late 1980s).",
+      "Subgenres": {
+        "Idol kayō": {
+          "Description": "More Westernized and upbeat form of Kayōkyoku popular in the 1970s and 1980s which acted as a precursor to J-Pop."
+        },
+        "Mood kayō": {
+          "Description": "Early form of Kayōkyoku dominant in the 1950s and 1960s, prominently influenced by American Jazz, Hispanic American Music, and Hawaiian Music."
+        },
+        "Techno kayō": {
+          "Description": "Offshoot of 1980s Kayōkyoku and Idol kayō incorporating characteristics from Synthpop."
+        }
+      }
+    },
+    "Korean Ballad": {
+      "Description": "South Korean Pop from the 1980s to the early 90s taking influence from western Blues, Synthpop, Soul and Contemporary Folk.",
+      "Subgenres": {
+        "Oriental Ballad": {
+          "Description": "Emerged in the late 1990s in South Korea, taking influence from more traditional forms of Korean Music."
+        }
+      }
+    },
+    "K-Pop": {
+      "Description": "Contemporary Pop scene in South Korea based on multiple mainstream influences such as Contemporary R&B, Dance-Pop, and Hip Hop.",
+      "Subgenres": {
+        "Semi-Trot": {
+          "Description": "Contemporary form of Trot which takes influences from modern K-Pop and recent Pop substyles."
+        }
+      }
+    },
+    "Latin Pop": {
+      "Description": "Characterized by its usage of Latino clichés and frequently influenced by traditional Latin American styles, commonly borrowing from their instrumentation.",
+      "Subgenres": {
+        "Cumbia pop": {
+          "Description": "Developed in the Río de la Plata region in the mid-2010s, featuring Latin Pop influences and lyrics related to romance, youth, and fun."
+        },
+        "Tropipop": {
+          "Description": "Subgenre of Colombian origin fusing Vallenato instrumentation into a Latin Pop context."
+        }
+      }
+    },
+    "Lokal musik": {
+      "Description": "Created by local, rural artists from Papua New Guinea that incorporate some elements of Papuan Folk Music into Pop."
+    },
+    "Mulatós": {
+      "Description": "Upbeat, danceable Hungarian Pop that takes strong influence from Hungarian Folk Music and Romani Folk Music."
+    },
+    "Nederpop": {
+      "Description": "Dutch language Pop which originally arose in the 1970s to describe the style of the 1950s and 1960s, but would also later be used for 1980s artists who incorporated elements of Ska and Reggae.",
+      "Subgenres": {
+        "Palingsound": {
+          "Description": "Originating from Volendam in the Netherlands; harmonizing vocals and orchestrated arrangements."
+        }
+      }
+    },
+    "New Music": {
+      "Description": "Developed when Japanese Singer-Songwriters incorporated elements of Contemporary Folk and Pop Rock with Kayōkyoku songwriting."
+    },
+    "New Romantic": {
+      "Description": "UK pop cultural movement associated with the early 1980s and defined by a distinct, flamboyant fashion sense."
+    },
+    "OPM": {
+      "Description": "Style of pop balladry originating from the Philippines as a successor of the Manila Sound."
+    },
+    "Orthodox Pop": {
+      "Description": "Combines Orthodox Jewish themes and prayer with Pop songwriting, usually sung in Hebrew."
+    },
+    "Persian Pop": {
+      "Description": "Hybrid of Iranian and Persian-language popular music with Western instruments such as the guitar, drum kit, and synthesizer."
+    },
+    "Pop Batak": {
+      "Description": "Combines Western genres of music and instrumentation with a typical Batak flair, like lyrics about Batak life and the use of some traditional Batak instruments."
+    },
+    "Pop Ghazal": {
+      "Description": "Employs traditional Ghazal's verse, meter, and poetic inclinations in a pop form."
+    },
+    "Pop Minang": {
+      "Description": "Combines Minangkabau traditions with Pop structures and instrumentation."
+    },
+    "Pop Raï": {
+      "Description": "Fuses melodic sensibilities into the traditional Raï structure, with increased utilization of synthesizers, guitars, and drum machines."
+    },
+    "Pop Reggae": {
+      "Description": "Light, commercial form of Reggae designed to crossover and break through to a more mainstream Pop audience."
+    },
+    "Pop Rock": {
+      "Description": "Standard verse-chorus Pop that can also be categorized under Rock for its use of guitars, drums, and propulsive rhythms.",
+      "Subgenres": {
+        "Beat Music": {
+          "Description": "Emerged in the early 1960s in the United Kingdom, drawing on Rock & Roll and the late 1950s Skiffle revival.",
+          "Subgenres": {
+            "Freakbeat": {
+              "Description": "Combined elements of British Rhythm & Blues, Beat Music, and Pop Rock with the studio effects of Psychedelia - fuzztones, flanging, chorus - to create a style often seen as a British relative of American Garage Rock and Psychedelic Rock."
+            },
+            "Group Sounds": {
+              "Description": "Japanese bands in the mid-to-late 1960s who began performing a style of Beat Music primarily in English."
+            },
+            "Jovem Guarda": {
+              "Description": "1960s Brazilian youth-oriented Pop Rock, with romantic lyrics and influenced by Merseybeat and Rockabilly."
+            },
+            "Merseybeat": {
+              "Description": "Light, highly melodic style of Beat Music popular in the UK during the early 1960s, named due to the abundance of bands from Liverpool beside the River Mersey."
+            },
+            "Nederbeat": {
+              "Description": "Dutch answer to the UK Beat Music boom of the 1960s."
+            }
+          }
+        },
+        "Big Music": {
+          "Description": "Rooted in Post-Punk and popular in the 1980s, with anthemic songwriting and a grandiose, stadium-ready sound."
+        },
+        "Britpop": {
+          "Description": "Emerged in the United Kingdom in the early 1990s, with a style hearkening back to the traditional guitar-driven songs and melodic hooks found in the British Pop Rock of the 1960s."
+        },
+        "Jangle Pop": {
+          "Description": "Pop-oriented songwriting based around chiming jangly guitar lines, and propulsive rhythms often drawn from Post-Punk.",
+          "Subgenres": {
+            "C86": {
+              "Description": "Distinctly ramshackle, often Twee Pop-infused combination of British Indie Rock and Jangle Pop."
+            },
+            "Neo-Acoustic": {
+              "Description": "Japanese term for a cross-section of Indie Pop and Jangle Pop with more prominent acoustic instrumentation and songwriting/arrangements that draw from Sophisti-Pop."
+            },
+            "Paisley Underground": {
+              "Description": "Emerged in Los Angeles in the early 1980s, featuring the energy of Power Pop and New Wave adorned with retro Psychedelia."
+            }
+          }
+        },
+        "Manila Sound": {
+          "Description": "Philippine Pop Rock movement most prominent in the 1970s; served as a predecessor of OPM."
+        },
+        "Piano Rock": {
+          "Description": "Primarily based around piano riffs and melodies, rather than having guitar as the focal instrument."
+        },
+        "Post-Britpop": {
+          "Description": "Emerged in the late 1990s as a Britpop expansion mainly characterized by acoustic-leaning instrumentation, lush string arrangements, and mid-tempo song structures, as well as less apparent lyrical concerns for Britain in favor of introspective, contemplative themes."
+        },
+        "Power Pop": {
+          "Description": "Heavier Pop Rock that combines strong Pop melodies with loud power chords, characterized by prominent electric guitars, clear vocals, crisp harmonies, and economical arrangements."
+        },
+        "Soft Rock": {
+          "Description": "Light, melodic, radio-friendly Rock which gained huge commercial success in the 1970s.",
+          "Subgenres": {
+            "Tropical Rock": {
+              "Description": "Combines influences from Country Rock and Caribbean Music to create an acoustic and breezy 'island' themed sound."
+            },
+            "Yacht Rock": {
+              "Description": "Slick Pop Rock influenced by smoother R&B styles, popular in the late 1970s and often associated with California."
+            }
+          }
+        },
+        "Sonido Donosti": {
+          "Description": "Sentimental and melancholic scene, influenced by Twee Pop, that emerged in the late 1980s in Donostia / San Sebastián, Spain."
+        },
+        "Stereo": {
+          "Description": "Burmese Pop Rock genre which emerged in the mid-1960s."
+        },
+        "Twee Pop": {
+          "Description": "Distinct Post-Punk background and often jangling guitars, defined by a cute aesthetic and lyrics combined with an indie/DIY attitude and a simplicity often indebted to Punk Rock."
+        },
+        "Vocal Surf": {
+          "Description": "Appropriates the sounds of instrumental Surf Rock, combining surfing- and car-themed lyrics with a style that draws primarily from Doo-Wop and Rock & Roll."
+        }
+      }
+    },
+    "Pop Soul": {
+      "Description": "Fusion of Pop and Soul; originated in the 1960s as an attempt to give soul crossover success.",
+      "Subgenres": {
+        "Motown Sound": {
+          "Description": "Succinct, catchy song structures; complex arrangements; Gospel-influenced vocals; highly melodic and rhythmic bass lines; 4-4 drum patterns; often syncopated piano parts; regular use of horn and string sections; and historically a distinctive reverb and treble-heavy production."
+        }
+      }
+    },
+    "Pop Sunda": {
+      "Description": "Mixes Sundanese traditions with Pop structures and instrumentation."
+    },
+    "Progressive Pop": {
+      "Description": "Milder counterpart to Progressive Rock, emerging in the late 1960s and introducing complex songwriting and arrangements into a Pop context."
+    },
+    "Psychedelic Pop": {
+      "Description": "Combines unconventional instrumentation with studio effects to create a psychedelic atmosphere within melodic Pop music."
+    },
+    "Rabiz": {
+      "Description": "Elements of Armenian folk in its instrumentation, oftentimes incorporating influences from Arabic and other West Asian forms on a background of synthesizer arrangements."
+    },
+    "Rigsar": {
+      "Description": "Dominant form of popular music in Bhutan which broke traditions to move towards a more Western and Indian approach."
+    },
+    "Rumba catalana": {
+      "Description": "Cheerful Catalan genre that takes influences from Rumba cubana, Andalusian Rumba flamenca, and Pop."
+    },
+    "Russian Chanson": {
+      "Description": "Divided into lyrical and criminal chanson, it is best described as narrative-driven popular music inspired by crime and prison."
+    },
+    "Schlager": {
+      "Description": "Light, sentimental, melodic pop music common mainly in northern and central Europe.",
+      "Subgenres": {
+        "Humppa": {
+          "Description": "Finnish music related to Jazz and the foxtrot."
+        },
+        "Levenslied": {
+          "Description": "Dutch genre that enjoyed widespread popularity in the pre-Rock & Roll era. with simple melody and rhythm and lyrics composed of couplets and refrains."
+        },
+        "Volkstümliche Musik": {
+          "Description": "Light Pop with borrowings from German Folk Music (volksmusik), often misleadingly labeled as being volksmusik."
+        }
+      }
+    },
+    "Sertanejo romântico": {
+      "Description": "Hybrid of Brazilian Sertanejo with Pop production and aesthetics, made popular nationwide during the mid-to-late 1980s.",
+      "Subgenres": {
+        "Sertanejo universitário": {
+          "Description": "Third evolution of Sertanejo, sharing close sensibilities with national Brazilian Pop music and other regional styles."
+        },
+        "Arrocha sertanejo": {
+          "Description": "Merged the Arrocha style with the younger audience creating a more energetic and more danceable rhythm."
+        },
+        "Funknejo": {
+          "Description": "Incorporates the rhythms, production, and idioms of Funk brasileiro into the universitário genre."
+        }
+      }
+    },
+    "Sophisti-Pop": {
+      "Description": "Incorporates influences from Jazz, classic R&B and Soul along with a slick, polished production style while retaining elements from its New Wave roots."
+    },
+    "Soviet Estrada": {
+      "Description": "Emerged in the USSR during the early 1930s, and encompassed the dominating popular music style composed by government-approved songwriters and the primary repertoire of professionally trained performers."
+    },
+    "Sunshine Pop": {
+      "Description": "Retrospective term for a more cheerful or wistful style of Pop which emerged in the mid-1960s as 'soft pop'."
+    },
+    "Synthpop": {
+      "Description": "Led by a prominent, melodic synthesizer sound, often with reverberated drum machine patterns that create a distinct atmospheric feel commonly associated with the 1980s.",
+      "Subgenres": {
+        "Futurepop": {
+          "Description": "Derivative of EBM, retaining its apocalyptic worldview but incorporating heavy influence from the melodic style of Synthpop."
+        },
+        "Pon-chak disco": {
+          "Description": "Heavily influenced by Electro-Disco, featuring cheap 'electronic organ' synth leads and minimalistic, repetitive rhythms."
+        },
+        "Techno kayō": {
+          "Description": "Offshoot of 1980s Kayōkyoku and Idol kayō incorporating characteristics from Synthpop."
+        }
+      }
+    },
+    "Teen Pop": {
+      "Description": "Oriented to teen audiences and almost always sung by teens."
+    },
+    "Traditional Pop": {
+      "Description": "Predominant form of Western commercial popular music in the pre-Rock & Roll era, particularly in the USA and starting with Tin Pan Alley; typically vocal-oriented with an orchestral arrangement.",
+      "Subgenres": {
+        "British Dance Band": {
+          "Description": "Came from the dancehalls of the 1920s and 1930s, combining a British take on Jazz with the Music Hall tradition."
+        },
+        "Mood kayō": {
+          "Description": "Early form of Kayōkyoku dominant in the 1950s and 1960s, prominently influenced by American Jazz, Hispanic American Music, and Hawaiian Music."
+        },
+        "Romanţe": {
+          "Description": "Expressive and poetic Romanian style, generally sung similar to a Chanson and composed for piano and guitar orchestral arrangements."
+        },
+        "Standards": {
+          "Description": "Traditional compositions originating from the 1910s and onward which have become widely known, performed, and recorded across the world."
+        },
+        "Tin Pan Alley": {
+          "Description": "Early era of popular song in the USA, broadly from the 1890s-1930s; influences include Ragtime, Vaudeville, and Parlour Music."
+        }
+      }
+    },
+    "Turkish Pop": {
+      "Description": "Started in the late 1950s, when Turkish artists started to write their own lyrics to Western popular tunes."
+    },
+    "Vocal Trance": {
+      "Description": "Melodic, polished, Pop-like, and vocal-focused with around 120-145 BPM and frequent overlap with Progressive Trance, Uplifting Trance, and Euro-Trance."
+    },
+    "V-Pop": {
+      "Description": "Western-sounding pop with Vietnamese lyrics, or pop that borrows sounds from popular Vietnamese genres and re-imagines them with more accessible and/or upbeat structures."
+    },
+    "Yé-yé": {
+      "Description": "Upbeat, trendy Pop that emerged in Southern Europe in the early 1960s, focusing on image and risqué lyrics."
+    }
+  }
+}

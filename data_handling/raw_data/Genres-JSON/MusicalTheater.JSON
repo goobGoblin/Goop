@@ -1,0 +1,72 @@
+{
+  "Genre": "Musical Theater and Entertainment",
+  "Description": "Range of styles of theatre individually popular in the United States or in various countries in Europe, mostly from the 19th century to the mid-20th century.",
+  "Subgenres": {
+    "Ballad Opera": {
+      "Description": "English reaction to the Italian Opera styles with a satirical sense of humor and scores borrowing from Traditional Folk Music and popular music."
+    },
+    "Cabaret": {
+      "Description": "Entertainment featuring Comedy, song, dance, and theatre."
+    },
+    "Comédie-ballet": {
+      "Description": "French form of musical drama from the 17th century that combines operatic singing, classical dance, and theater."
+    },
+    "Cuplé": {
+      "Description": "Originally developed in the 19th century as a blend of old theatre Spanish styles based in short monologues (jácara and tonadilla) and French Couplet."
+    },
+    "Dutch Cabaret": {
+      "Description": "Popular comedy form in the Netherlands which evolved out of traditional Cabaret in the 1890s."
+    },
+    "Kabarett": {
+      "Description": "Theatrical entertainment consisting of mixed elements of music, sketches, monologues, dialogues, lyric poetry and/or ballads."
+    },
+    "Kanto": {
+      "Description": "Songs performed at the Tuluat Theaters of İstanbul in the late 19th century."
+    },
+    "Minstrelsy": {
+      "Description": "Popular song and entertainment tradition from the U.S. engendered in variety shows employing racist caricature and blackface."
+    },
+    "Murga": {
+      "Description": "Popular carnival music traditional in some cities of Spain and Hispanic America.",
+      "Subgenres": {
+        "Murga uruguaya": {
+          "Description": "Variant originated in Montevideo that stands out for its rhythms, nasal vocals and choral arrangements."
+        }
+      }
+    },
+    "Music Hall": {
+      "Description": "British theatrical entertainment popular in the 19th and 20th centuries, featuring light and comedic popular songs."
+    },
+    "Operetta": {
+      "Description": "Light opera interspersed with spoken dialogues, being usually satirical and/or humorous in nature and centered around romantic plots and dancing scenes.",
+      "Subgenres": {
+        "Kalon'ny fahiny": {
+          "Description": "Fusion of music from the highlands of Madagascar and western Operetta."
+        }
+      }
+    },
+    "Revue": {
+      "Description": "French Musical Theatre and Entertainment based on numbers and sketches inspired by the most relevant events of the year."
+    },
+    "Rock Musical": {
+      "Description": "Style of musical theatre inspired by Rock."
+    },
+    "Show Tunes": {
+      "Description": "Originally composed to forward the story or enhance the characters or other plot elements of Broadway productions and other stage music."
+    },
+    "Siffleur": {
+      "Description": "Professional whistlers on the Vaudeville and Music Hall circuits."
+    },
+    "Singspiel": {
+      "Description": "German form of Opera distinguished by the prominent usage of spoken dialogues mixed with lyrical or folklore arias/ballads."
+    },
+    "Vaudeville": {
+      "Description": "Performed in American musical theaters typically as part of a lowbrow, often comedic variety performance.",
+      "Subgenres": {
+        "Vaudeville Blues": {
+          "Description": "Vaudeville incorporating heavy Blues elements."
+        }
+      }
+    }
+  }
+}
