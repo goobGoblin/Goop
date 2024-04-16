@@ -2,3 +2,11 @@
 node_modules
 config.JSON
 .DS_Store
+
+# 1001 Tracklists ignores
+venv
+.vscode
+__pycache__
+*.html
+*/__pycache__
+try.py

@@ -3,7 +3,7 @@ import json
 import pymysql
 
 # Load database configuration
-with open('./config.JSON') as f:
+with open('../../config.JSON') as f:
     config = json.load(f)
 
 # Connect to the database
@@ -55,7 +55,7 @@ def handle_subgenre(cursor, subgenre, genre_id, parent_id=None):
 def main():
     directory_path = '../raw_data/Genres-JSON'  # Directory containing all JSON files
     json_files = [os.path.join(directory_path, f) for f in os.listdir(directory_path) if f.endswith('.json')]
-    
+
     try:
         with connection.cursor() as cursor:
             for json_file in json_files:

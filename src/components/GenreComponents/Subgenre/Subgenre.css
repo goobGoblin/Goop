@@ -1,20 +1,4 @@
-.genres-container {
-  margin-left: 100px;
-	margin-right: 100px;
-}
-
-.subgenres-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
-  gap: 5px; /* Margin around items */
-}
-
-.main-genre-container {
-  background-color: #f0f0f0; /* Light grey background */
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 90%%; /* Adjust width to fit content */
-}
+/* Subgenre.css */
 
 .subgenre-item {
   background-color: #f0f0f0; /* Light grey background */
@@ -24,16 +8,15 @@
   align-items: center;
   height: 0;
   padding-top: 50%; /* Height is half of the width */
-	padding-bottom: 30px;
+  padding-bottom: 30px;
   position: relative;
   cursor: pointer; /* Changes the cursor to a pointer on hover */
-
 }
 
 .subgenre-item h5 {
-	background-color: white;
-	z-index: 1;
-	padding: 5px;
+  background-color: white;
+  z-index: 1;
+  padding: 5px;
 }
 
 .subgenre-item::before {

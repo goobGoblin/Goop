@@ -1,65 +1,82 @@
 {
-  "Genre": "Singer-Songwriter",
-  "Description": "Heavily focused on lyrics and songwriting, with musical accompaniment tending to take lower precedence.",
-  "Subgenres": {
-    "Avtorskaya pesnya": {
-      "Description": "Originating in the Soviet Union taking cues from forms of Russian Romance and Russian poetry with the main focus on lyrics.",
-      "Subgenres": {
-        "Bard Rock": {
-          "Description": "Mixes Rock music and styles with Avtorskaya pesnya."
+  "genre": "Singer-Songwriter",
+  "description": "Heavily focused on lyrics and songwriting, with musical accompaniment tending to take lower precedence.",
+  "subgenres": [
+    {
+      "name": "Avtorskaya pesnya",
+      "description": "Originating in the Soviet Union taking cues from forms of Russian Romance and Russian poetry with the main focus on lyrics.",
+      "subgenres": [
+        {
+          "name": "Bard Rock",
+          "description": "Mixes Rock music and styles with Avtorskaya pesnya."
         }
-      }
+      ]
     },
-    "Canzone d'autore": {
-      "Description": "Music of the Italian Singer-Songwriters that emerged in the 1960s and early 1970s, initially influenced by French Chanson with the addition of uniquely Italian sensibilities."
+    {
+      "name": "Canzone d'autore",
+      "description": "Music of the Italian Singer-Songwriters that emerged in the 1960s and early 1970s, initially influenced by French Chanson with the addition of uniquely Italian sensibilities."
     },
-    "Chanson à texte": {
-      "Description": "French-language songs emphasising sophisticated and poetic lyricism."
+    {
+      "name": "Chanson à texte",
+      "description": "French-language songs emphasising sophisticated and poetic lyricism."
     },
-    "Euskal kantagintza berria": {
-      "Description": "Basque genre born during the 1960s inspired by Nova cançó and Chanson."
+    {
+      "name": "Euskal kantagintza berria",
+      "description": "Basque genre born during the 1960s inspired by Nova cançó and Chanson."
     },
-    "Kleinkunst": {
-      "Description": "Dutch-language genre from the Netherlands and Flanders with influences from Cabaret, protest songs, Chanson, and folk."
+    {
+      "name": "Kleinkunst",
+      "description": "Dutch-language genre from the Netherlands and Flanders with influences from Cabaret, protest songs, Chanson, and folk."
     },
-    "Liedermacher": {
-      "Description": "German style having its origins in literature and theatre rather than American forms like Blues or Rock."
+    {
+      "name": "Liedermacher",
+      "description": "German style having its origins in literature and theatre rather than American forms like Blues or Rock."
     },
-    "Música de intervenção": {
-      "Description": "Wave of Portuguese singer-songwriters in the 1960s and 1970s who agitated against the Estado Novo regime and the colonial war waged by Portugal against national liberation fronts."
+    {
+      "name": "Música de intervenção",
+      "description": "Wave of Portuguese singer-songwriters in the 1960s and 1970s who agitated against the Estado Novo regime and the colonial war waged by Portugal against national liberation fronts."
     },
-    "Nova cançó": {
-      "Description": "Arose in Catalonia during the Franco dictatorship, sung in Catalan as a way to resist restrictions placed on regional languages in Spain and retain a regional identity."
+    {
+      "name": "Nova cançó",
+      "description": "Arose in Catalonia during the Franco dictatorship, sung in Catalan as a way to resist restrictions placed on regional languages in Spain and retain a regional identity."
     },
-    "Nòva cançon": {
-      "Description": "Arose in the Occitania region of southern France, sung in the Occitan language as a way to preserve their culture and resist forced usage of French."
+    {
+      "name": "Nòva cançon",
+      "description": "Arose in the Occitania region of southern France, sung in the Occitan language as a way to preserve their culture and resist forced usage of French."
     },
-    "Nueva canción": {
-      "Description": "Latin American (Nueva canción latinoamericana) and Spanish (Nueva canción española) movement during the 1960s and 1970s.",
-      "Subgenres": {
-        "Nueva canción española": {
-          "Description": "Arose in Spain in the 1960s, inspired in part by Nova cançó's reclaiming of Catalan regional identity, that spread across the country in regional variations."
+    {
+      "name": "Nueva canción",
+      "description": "Latin American (Nueva canción latinoamericana) and Spanish (Nueva canción española) movement during the 1960s and 1970s.",
+      "subgenres": [
+        {
+          "name": "Nueva canción española",
+          "description": "Arose in Spain in the 1960s, inspired in part by Nova cançó's reclaiming of Catalan regional identity, that spread across the country in regional variations."
         },
-        "Nueva canción latinoamericana": {
-          "Description": "Politically-charged messages associated with the rise of leftist social movements; striving for a renewal of traditional Latin and Hispanic American Folk Music expressions.",
-          "Subgenres": {
-            "Nueva canción chilena": {
-              "Description": "Socially conscious style that sought to recover traditional Chilean folk music and fuse it with the broader musical trends of Latin America.",
-              "Subgenres": {
-                "Nueva trova": {
-                  "Description": "Found inspiration in the 1950s Cuban Revolution and had the intention of introducing new musical ideas to the original Trova."
+        {
+          "name": "Nueva canción latinoamericana",
+          "description": "Politically-charged messages associated with the rise of leftist social movements; striving for a renewal of traditional Latin and Hispanic American Folk Music expressions.",
+          "subgenres": [
+            {
+              "name": "Nueva canción chilena",
+              "description": "Socially conscious style that sought to recover traditional Chilean folk music and fuse it with the broader musical trends of Latin America.",
+              "subgenres": [
+                {
+                  "name": "Nueva trova",
+                  "description": "Found inspiration in the 1950s Cuban Revolution and had the intention of introducing new musical ideas to the original Trova."
                 },
-                "Nuevo Cancionero": {
-                  "Description": "Musical-literary movement in Argentina that aimed to reevaluate and reinvigorate 'la música popular nativa' (native popular music) and to be the voice of poor and marginalized Argentines."
+                {
+                  "name": "Nuevo Cancionero",
+                  "description": "Musical-literary movement in Argentina that aimed to reevaluate and reinvigorate 'la música popular nativa' (native popular music) and to be the voice of poor and marginalized Argentines."
                 },
-                "Poezja śpiewana": {
-                  "Description": "Polish sung poetry; the poem is the centerpiece of a song, often with sparse instrumental accompaniment."
+                {
+                  "name": "Poezja śpiewana",
+                  "description": "Polish sung poetry; the poem is the centerpiece of a song, often with sparse instrumental accompaniment."
                 }
-              }
+              ]
             }
-          }
+          ]
         }
-      }
+      ]
     }
-  }
+  ]
 }
