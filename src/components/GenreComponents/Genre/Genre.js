@@ -17,11 +17,10 @@ const subgenres = [
 function Genres() {
   return (
     <div className="genres-container">
-      <h2>Main Genre</h2>
       <div className="subgenres-grid">
         {subgenres.map((subgenre, index) => (
           <div key={index} className="subgenre-item">
-            {subgenre}
+            <h5>{subgenre}</h5>
           </div>
         ))}
       </div>

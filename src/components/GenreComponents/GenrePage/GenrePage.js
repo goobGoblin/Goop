@@ -6,7 +6,8 @@ function GenrePage() {
   return (
     <div className="genre-page-container">
       <h1>Genres</h1>
-      <Genre /> {/* Render the Genres component */}
+			<p className="description">Clicking on a genre will reveal several sub-genres. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie pulvinar diam, a semper turpis iaculis eu. Suspendisse vel dapibus leo. Duis lacinia quam.</p>
+      <Genre/> {/* Render the Genres component */}
     </div>
   );
 }
