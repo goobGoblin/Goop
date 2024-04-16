@@ -1,5 +1,6 @@
 .genres-container {
-  margin: 20px;
+  margin-left: 100px;
+	margin-right: 100px;
 }
 
 .subgenres-grid {
@@ -16,8 +17,16 @@
   align-items: center;
   height: 0;
   padding-top: 50%; /* Height is half of the width */
+	padding-bottom: 30px;
   position: relative;
   cursor: pointer; /* Changes the cursor to a pointer on hover */
+	
+}
+
+.subgenre-item h5 {
+	background-color: white;
+	z-index: 1;
+	padding: 5px;
 }
 
 .subgenre-item::before {

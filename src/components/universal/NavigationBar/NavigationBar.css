@@ -5,6 +5,8 @@
   /* Take up all available space */
   justify-content: space-around; /* Space items evenly */
   min-height: 50px;
+	width: 100%;
+	backdrop-filter: blur(10px);
 }
 
 .nav-item {
@@ -12,20 +14,23 @@
   text-align: center;
   line-height: 50px;
   /* Add your existing item styles here */
+	background-color: rgba(0, 0, 0, 0.312);
+	text-decoration: none;
+	color: white;
 }
 
-
 .nav-item:hover {
-  background-color: silver;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.354);
 }
 
 .nav-item-account {
-  background-color: black;
-  color: white;
+  background-color: rgba(32, 5, 48, 0.396);
 }
 
-.selected {
-  background-color: #818589;
-  color: white;
+.nav-item-account:hover {
+  background-color: rgba(32, 5, 48, 0.434);
+}
+
+.selected, .selected:hover {
+  background-color: #160b4951;
 }

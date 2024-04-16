@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import './NavigationBar.css'; // Import the CSS file for styling
 
 const menuItems = [
-  { id: 'genres', label: 'Genres', to: '/genres' },
-  { id: 'artists', label: 'Artists' },
-  { id: 'albums', label: 'Albums' },
-  { id: 'mixes', label: 'Mixes' },
-  { id: 'labels', label: 'Labels' },
-  { id: 'account', label: 'Account'},
+  { id: 'genres', 	label: 'Genres', 	to: '/genres' },
+  { id: 'artists', 	label: 'Artists', to: '/artists' },
+  { id: 'albums', 	label: 'Albums', 	to: '/albums' },
+  { id: 'mixes', 		label: 'Mixes', 	to: '/mixes' },
+  { id: 'labels', 	label: 'Labels',  to: '/labels'},
+  { id: 'account', 	label: 'Account', tp: '/account'},
 ];
 
 function NavigationBar() {
