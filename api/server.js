@@ -5,7 +5,7 @@ const fs = require('fs');
 const app = express();
 const port = 5000;
 
-const configData = fs.readFileSync('config.json');
+const configData = fs.readFileSync('../config.json');
 const config = JSON.parse(configData);
 
 // Database configuration
