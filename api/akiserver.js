@@ -36,6 +36,19 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     });
   });
 
+  // API endpoint to fetch subgenres
+  app.get('/api/subgenres', (req, res) => {
+    const genrename = req.query.genrename;
+    const query = `SELECT SubgenreName, Description FROM Subgenres WHERE SubgenreName LIKE '%${genrename}%'`;
+    connection.query(query, (error, results) => {
+      if (error) {
+        console.error('Error fetching subgenres:', error);
+        return res.status(500).send('Error fetching subgenres');
+      }
+      res.json(results);
+    });
+  });
+
   // Start the server
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
