@@ -1,6 +1,6 @@
 # project dependencies
 node_modules
-config.JSON
+config.json
 .DS_Store
 
 # 1001 Tracklists ignores

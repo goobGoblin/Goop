@@ -1,16 +1,20 @@
 const express = require('express');
 const mysql = require('mysql2');
+const fs = require('fs');
 
 const app = express();
 const port = 5000;
 
+const configData = fs.readFileSync('config.json');
+const config = JSON.parse(configData);
+
 // Database configuration
 const db_config = {
-    host: 'db-dtx-02.sparkedhost.us',
-    user: 'u88974_cjyIvDc31x',
-    password: 'ioQ=hagmXE+@03!Jp!5xwZOD',
-    database: 's88974_EECS447',
-    port: 3306
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.database,
+    port: config.port
 };
 
 // Create a MySQL connection pool
