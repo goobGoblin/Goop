@@ -14,9 +14,24 @@
 }
 
 .subgenre-item h5 {
-  background-color: white;
-  z-index: 1;
-  padding: 5px;
+  width: 100%; /* Ensures the title spans the full width of its container */
+  text-align: center; /* Centers the title */
+  margin-bottom: 80%; /* Adds space between the title and the description */
+  font-size: 16px; /* Sets the size of the font */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  overflow: hidden; /* Hides overflow */
+  text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+}
+
+.subgenre-item p {
+  text-align: center; /* Centers the description */
+  font-size: 14px; /* Sets the size of the font */
+  margin-bottom: 20%; /* Adds space between the title and the description */
+  overflow: hidden; /* Prevents overflow */
+  text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits to 3 lines */
+  -webkit-box-orient: vertical;
 }
 
 .subgenre-item::before {

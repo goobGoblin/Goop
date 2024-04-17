@@ -20,28 +20,14 @@
   background-color: #f0f0f0; /* Light grey background */
   color: #333; /* Dark text color */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0;
-  padding-top: 50%; /* Height is half of the width */
-	padding-bottom: 30px;
-  position: relative;
-  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  flex-direction: column; /* Organizes children (name, description) in a column */
+  justify-content: flex-start; /* Aligns children to the top */
+  align-items: center; /* Centers children horizontally */
+  padding: 10px; /* Adds padding inside the subgenre box */
+  margin: 5px 0; /* Adds vertical margin for spacing between items */
+  cursor: pointer; /* Indicates the item is clickable */
+  overflow: hidden; /* Hides any overflow */
+  border: 1px solid #ccc; /* Adds a border for better visual separation */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
 
-}
-
-.subgenre-item h5 {
-	background-color: white;
-	z-index: 1;
-	padding: 5px;
-}
-
-.subgenre-item::before {
-  content: '';
-  float: left;
-  padding-top: 100%; /* This maintains the aspect ratio */
-}
-
-.subgenre-item > * {
-  position: absolute;
 }

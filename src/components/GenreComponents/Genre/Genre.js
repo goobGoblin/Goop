@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
-import './Genre.css'; // Import the CSS file for styling
-import Subgenre from '../Subgenre/Subgenre'; // Import the Subgenre component
+import './Genre.css';
+import Subgenre from '../Subgenre/Subgenre';
 
-// Example subgenres
-const subgenres = [
-  'Progressive Rock',
-  'Psychedelic Rock',
-  'Hard Rock',
-  'Blues Rock',
-  'Folk Rock',
-  'Alternative Rock',
-  'Indie Rock',
-  'Punk Rock',
-  'Grunge',
-  'Classic Rock',
-];
-
-function Genres() {
+function Genre({ genre }) {
   const [showSubgenres, setShowSubgenres] = useState(false);
 
   const toggleSubgenres = () => {
@@ -26,13 +12,13 @@ function Genres() {
   return (
     <div className="genres-container">
       <div className="main-genre-container" onClick={toggleSubgenres}>
-        <h2>Main Genre</h2>
-        <p>Main Genre Description</p>
+        <h2>{genre.genre}</h2>
+        <p>{genre.description}</p>
       </div>
       {showSubgenres && (
         <div className="subgenres-grid">
-          {subgenres.map((subgenre, index) => (
-            <Subgenre key={index} name={subgenre} />
+          {genre.subgenres.map((subgenre, index) => (
+            <Subgenre key={index} subgenre={subgenre} />
           ))}
         </div>
       )}
@@ -40,4 +26,4 @@ function Genres() {
   );
 }
 
-export default Genres;
+export default Genre;
