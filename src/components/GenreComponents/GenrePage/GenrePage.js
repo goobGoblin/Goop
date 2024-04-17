@@ -5,8 +5,8 @@ import Genre from '../Genre/Genre';
 function GenrePage() {
   const [genres, setGenres] = useState([]);
 
-  function fetchSubgenres(genreName) {
-    fetch(`/api/subgenres?genrename=${genreName}`)
+  function fetchSubgenres(genreID) {
+    fetch(`/api/subgenres?genreID=${genreID}`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched subgenres:', data);
@@ -14,6 +14,10 @@ function GenrePage() {
       .catch(error => {
         console.error('Error fetching subgenres:', error);
       });
+  }
+
+  function genreClicked(ID) {
+    fetchSubgenres(ID);
   }
 
   useEffect(() => {
@@ -43,10 +47,10 @@ function GenrePage() {
       <p className="description">Clicking on a genre will reveal several sub-genres.</p>
 
       {genres.map((genre, index) => (
-        <div key={index} className="main-genre-container" onClick={() => fetchSubgenres(genre.Name)}>
+        <div key={index} className="main-genre-container" onClick={() => genreClicked(genre.GenreID)}>
           <h2>{genre.Name}</h2>
           <p>{genre.Description}</p>
-          {genre.showDropdown ? <p>TODO: ADD SUBGENRES FROM FETCH!</p> : null}
+          {genre.showDropdown ? <p id="123">TODO: ADD SUBGENRES FROM FETCH!</p> : null}
           <button onClick={() => {
             const updatedGenres = [...genres];
             updatedGenres[index].showDropdown = !updatedGenres[index].showDropdown;
