@@ -5,6 +5,17 @@ import Genre from '../Genre/Genre';
 function GenrePage() {
   const [genres, setGenres] = useState([]);
 
+  function fetchSubgenres(genreName) {
+    fetch(`/api/subgenres?genrename=${genreName}`)
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched subgenres:', data);
+      })
+      .catch(error => {
+        console.error('Error fetching subgenres:', error);
+      });
+  }
+
   useEffect(() => {
     fetch('/api/genres')
       .then(response => response.json())
@@ -32,12 +43,21 @@ function GenrePage() {
       <p className="description">Clicking on a genre will reveal several sub-genres.</p>
 
       {genres.map((genre, index) => (
-        <div key={index} className="main-genre-container" onClick={{/*do something*/}}>
+        <div key={index} className="main-genre-container" onClick={() => fetchSubgenres(genre.Name)}>
           <h2>{genre.Name}</h2>
           <p>{genre.Description}</p>
+          {genre.showDropdown ? <p>TODO: ADD SUBGENRES FROM FETCH!</p> : null}
+          <button onClick={() => {
+            const updatedGenres = [...genres];
+            updatedGenres[index].showDropdown = !updatedGenres[index].showDropdown;
+            setGenres(updatedGenres);
+          }}>
+            Subgenres
+          </button>
         </div>
       ))}
-			<p className="easter-egg">🫶</p>
+
+      <p className="easter-egg">🫶</p>
 
       {/* I commented this out because I didn't want to mess with other files (namely Genre.js), and wanted to get something working. */}
       {/* {genres.map((genre, index) => (
