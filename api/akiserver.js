@@ -27,7 +27,11 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
 
   // API endpoint to fetch genres
   app.get('/api/genres', (req, res) => {
-    connection.query('SELECT Name, Description FROM Genres', (error, results) => {
+    const query = `
+      SELECT Name, Description, GenreID
+      FROM Genres
+    `;
+    connection.query(query, (error, results) => {
       if (error) {
         console.error('Error fetching genres:', error);
         return res.status(500).send('Error fetching genres');
@@ -38,8 +42,13 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
 
   // API endpoint to fetch subgenres
   app.get('/api/subgenres', (req, res) => {
-    const genrename = req.query.genrename;
-    const query = `SELECT SubgenreName, Description FROM Subgenres WHERE SubgenreName LIKE '%${genrename}%'`;
+    const genreID = req.query.genreID;
+    const query = `
+      SELECT Subgenres.SubgenreName, Subgenres.Description
+      FROM Subgenres
+      INNER JOIN GenreSubgenre ON Subgenres.SubgenreID = GenreSubgenre.SubgenreID
+      WHERE GenreSubgenre.GenreID = ${genreID}
+    `;
     connection.query(query, (error, results) => {
       if (error) {
         console.error('Error fetching subgenres:', error);
