@@ -6,6 +6,8 @@ function AlbumPage() {
     <div className="album-page-container">
       <h1>Albums</h1>
 			<p className="description">CLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie pulvinar diam, a semper turpis iaculis eu. Suspendisse vel dapibus leo. Duis lacinia quam.</p>
+
+			<p className="easter-egg">🫶</p>
     </div>
   );
 }

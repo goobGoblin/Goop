@@ -11,17 +11,7 @@ function Genre({ genre }) {
 
   return (
     <div className="genres-container">
-      <div className="main-genre-container" onClick={toggleSubgenres}>
-        <h2>{genre.genre}</h2>
-        <p>{genre.description}</p>
-      </div>
-      {showSubgenres && (
-        <div className="subgenres-grid">
-          {genre.subgenres.map((subgenre, index) => (
-            <Subgenre key={index} subgenre={subgenre} />
-          ))}
-        </div>
-      )}
+      {/* do something */}
     </div>
   );
 }

@@ -32,11 +32,12 @@ function GenrePage() {
       <p className="description">Clicking on a genre will reveal several sub-genres.</p>
 
       {genres.map((genre, index) => (
-        <div key={index}>
+        <div key={index} className="main-genre-container" onClick={{/*do something*/}}>
           <h2>{genre.Name}</h2>
           <p>{genre.Description}</p>
         </div>
       ))}
+			<p className="easter-egg">🫶</p>
 
       {/* I commented this out because I didn't want to mess with other files (namely Genre.js), and wanted to get something working. */}
       {/* {genres.map((genre, index) => (
