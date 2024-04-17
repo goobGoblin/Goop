@@ -1,19 +1,7 @@
-.genres-container {
-  margin-left: 100px;
-	margin-right: 100px;
-}
-
 .subgenres-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Creates 5 columns */
   gap: 5px; /* Margin around items */
-}
-
-.main-genre-container {
-  background-color: #f0f0f0; /* Light grey background */
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 90%%; /* Adjust width to fit content */
 }
 
 .subgenre-item {
@@ -29,5 +17,4 @@
   overflow: hidden; /* Hides any overflow */
   border: 1px solid #ccc; /* Adds a border for better visual separation */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
-
 }

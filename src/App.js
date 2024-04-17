@@ -14,7 +14,7 @@ function App() {
   return (
 		<BrowserRouter>
 			<div className="app">
-				<div className="background-image"></div>
+				{/* <div className="background-image"></div> */}
 				<div className="noise-overlay"></div>
 				<div className = "content">
 					<div className="header-container">
