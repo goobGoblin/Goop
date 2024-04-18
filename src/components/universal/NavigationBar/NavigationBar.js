@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './NavigationBar.css'; // Import the CSS file for styling
 
 const menuItems = [
+  { id: 'search',   label: 'Search',  to: '/search'},
   { id: 'genres', 	label: 'Genres', 	to: '/genres' },
   { id: 'artists', 	label: 'Artists', to: '/artists' },
   { id: 'albums', 	label: 'Albums', 	to: '/albums' },
