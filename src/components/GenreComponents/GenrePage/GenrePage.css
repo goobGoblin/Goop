@@ -10,6 +10,7 @@
   overflow-y: auto;   /* Enable vertical scrolling */
   padding: 20px;      /* Optional: Add padding for better layout */
   box-sizing: border-box; /* Include padding in height calculation */
+	scrollbar-width: none; /* For Firefox */
 }
 
 .genre-page-container h1 {
@@ -26,4 +27,9 @@
 	margin-bottom: 40px;
 	border: none;
 	border-radius: 20px;
+}
+
+/* Hide scrollbar for webkit (Chrome, Safari, Edge) */
+.genre-page-container::-webkit-scrollbar {
+    display: none;
 }
