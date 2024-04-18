@@ -1,6 +1,6 @@
-/* Subgenre.css */
+/* Album.css */
 
-.subgenre-item {
+.album-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,22 +13,22 @@
   background-color: #f9f9f9; /* Light background for better readability */
 }
 
-.subgenre-item h5 {
+.album-item h5 {
   margin-top: 0;
-  margin-bottom: 50px; /* Space between title and description */
+  margin-bottom: 5px; /* Adjusted space between title and description */
   font-size: 16px;
   font-weight: bold;
   color: #333;
 }
 
-.subgenre-item p {
+.album-item p {
   margin-top: 5px;
   font-size: 14px;
   color: #666;
   text-align: center;
 }
 
-.subgenre-item::before {
+.album-item::before {
   content: '';
   float: left;
   padding-top: 10%; /* This maintains the aspect ratio */

@@ -1,72 +1,72 @@
 import React, { useState, useEffect } from 'react';
 import './GenrePage.css';
+import DataGrid from '../../universal/DataGrid/DataGrid';
+import Subgenre from '../Subgenre/Subgenre';
 import Genre from '../Genre/Genre';
 
 function GenrePage() {
   const [genres, setGenres] = useState([]);
 
-  function fetchSubgenres(genreID) {
+  const fetchSubgenres = (genreID) => {
     fetch(`/api/subgenres?genreID=${genreID}`)
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched subgenres:', data);
+        const newGenres = genres.map(genre => {
+          if (genre.GenreID === genreID) {
+            return { ...genre, subgenres: data, showSubgenres: !genre.showSubgenres };
+          }
+          return genre;
+        });
+        setGenres(newGenres);
       })
       .catch(error => {
         console.error('Error fetching subgenres:', error);
       });
-  }
-
-  function genreClicked(ID) {
-    fetchSubgenres(ID);
-  }
+  };
 
   useEffect(() => {
     fetch('/api/genres')
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched genres:', data);  // Log the fetched data to see what it looks like
-        setGenres(data);
+        const updatedGenres = data.map(genre => ({
+          ...genre,
+          subgenres: [],
+          showSubgenres: false
+        }));
+        setGenres(updatedGenres);
       })
       .catch(error => {
         console.error('Error fetching genres:', error);
       });
-
-    // Dynamically import all JSON files from a specific folder
-    // function importAll(r) {
-    //   return r.keys().map(r);
-    // }
-
-    // const genreData = importAll(require.context('../../../../data_handling/raw_data/Genres-JSON', false, /\.json$/));
-    // setGenres(genreData);
   }, []);
-  
+
+  const handleGenreClick = (genreID) => {
+    const genre = genres.find(g => g.GenreID === genreID);
+    if (!genre.subgenres.length) {
+      fetchSubgenres(genreID);
+    } else {
+      toggleSubgenresDisplay(genreID);
+    }
+  };
+
+  const toggleSubgenresDisplay = (genreID) => {
+    const updatedGenres = genres.map(genre => ({
+      ...genre,
+      showSubgenres: genre.GenreID === genreID ? !genre.showSubgenres : genre.showSubgenres
+    }));
+    setGenres(updatedGenres);
+  };
 
   return (
     <div className="genre-page-container">
-      <h1>Genres</h1>
-      <p className="description">Clicking on a genre will reveal several sub-genres.</p>
-
-      {genres.map((genre, index) => (
-        <div key={index} className="main-genre-container" onClick={() => genreClicked(genre.GenreID)}>
-          <h2>{genre.Name}</h2>
-          <p>{genre.Description}</p>
-          {genre.showDropdown ? <p id="123">TODO: ADD SUBGENRES FROM FETCH!</p> : null}
-          <button onClick={() => {
-            const updatedGenres = [...genres];
-            updatedGenres[index].showDropdown = !updatedGenres[index].showDropdown;
-            setGenres(updatedGenres);
-          }}>
-            Subgenres
-          </button>
+      {genres.map(genre => (
+        <div key={genre.GenreID}>
+          <Genre genre={genre} onGenreClick={handleGenreClick} />
+          {genre.showSubgenres && (
+            <DataGrid key={`subgenre-${genre.GenreID}`} items={genre.subgenres} Component={Subgenre} />
+          )}
         </div>
       ))}
-
-      <p className="easter-egg">🫶</p>
-
-      {/* I commented this out because I didn't want to mess with other files (namely Genre.js), and wanted to get something working. */}
-      {/* {genres.map((genre, index) => (
-        <Genre key={index} genre={genre} />
-      ))} */}
     </div>
   );
 }

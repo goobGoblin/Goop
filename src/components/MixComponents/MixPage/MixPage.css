@@ -4,7 +4,7 @@
 }
 
 .mix-page-container {
-	margin: 100px;
+	margin: 50px;
 	margin-top: 0;
   max-height: 100vh;  /* Set the maximum height to 90% of the viewport height */
   overflow-y: auto;   /* Enable vertical scrolling */
@@ -15,6 +15,6 @@
 .mix-page-container h1 {
 	text-align: left;
 	margin-bottom: 0;
-	margin-top: 30vh;
+	margin-top: 10vh;
 	padding: 0;
 }
