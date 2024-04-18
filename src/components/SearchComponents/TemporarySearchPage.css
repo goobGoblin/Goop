@@ -1,0 +1,24 @@
+.genre-page-container {
+	margin: 100px;
+	margin-top: 0;
+  max-height: 100vh;  /* Set the maximum height to 90% of the viewport height */
+  overflow-y: auto;   /* Enable vertical scrolling */
+  padding: 20px;      /* Optional: Add padding for better layout */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.search-page-container h1 {
+  text-align: left;
+	margin-bottom: 0;
+	margin-top: 3vh;
+	padding: 0;
+}
+
+.search-page-container {
+	background-color: #ffffff;
+	padding: 20px;
+	/* width: 100%; */
+	margin-bottom: 40px;
+	border: none;
+	border-radius: 20px;
+}
