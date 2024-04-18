@@ -1,14 +1,15 @@
-.genre-page-container {
+.search-page-container {
 	margin: 100px;
 	margin-top: 0;
-  max-height: 100vh;  /* Set the maximum height to 90% of the viewport height */
-  overflow-y: auto;   /* Enable vertical scrolling */
-  padding: 20px;      /* Optional: Add padding for better layout */
-  box-sizing: border-box; /* Include padding in height calculation */
+  	max-height: 100vh;  /* Set the maximum height to 90% of the viewport height */
+  	overflow-y: auto;   /* Enable vertical scrolling */
+  	padding: 20px;      /* Optional: Add padding for better layout */
+  	box-sizing: border-box; /* Include padding in height calculation */
+  	overflow-y: auto;   /* Enable vertical scrolling */
 }
 
 .search-page-container h1 {
-  text-align: left;
+  	text-align: left;
 	margin-bottom: 0;
 	margin-top: 3vh;
 	padding: 0;
@@ -21,8 +22,4 @@
 	margin-bottom: 40px;
 	border: none;
 	border-radius: 20px;
-}
-
-.search-page-container textarea {
-	/* cursor: not-allowed; */
 }
