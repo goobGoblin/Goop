@@ -10,11 +10,15 @@ const menuItems = [
   { id: 'albums', 	label: 'Albums', 	to: '/albums' },
   { id: 'mixes', 		label: 'Mixes', 	to: '/mixes' },
   { id: 'labels', 	label: 'Labels',  to: '/labels'},
-  { id: 'account', 	label: 'Account', tp: '/account'},
+  // { id: 'account', 	label: 'Account', tp: '/account'},
 ];
 
 function NavigationBar() {
-  const [selected, setSelected] = useState('genres');
+  const [selected, setSelected] = useState(() => {
+    const currentPath = window.location.pathname;
+    const paths = ['search', 'genres', 'artists', 'albums', 'mixes'];
+    return paths.find(path => currentPath.includes(`/${path}`)) || 'genres'; // Default to 'genres'
+  });
 
   return (
     <nav className="navigation-bar">
