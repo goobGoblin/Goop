@@ -80,9 +80,9 @@ function SearchPage() {
   }
 
   useEffect(() => {
-    
+
   }, []);
-  
+
 
   const genreSearchClick = async () => {
     let genre = document.getElementById("trackGenreName").value;
@@ -167,7 +167,6 @@ function SearchPage() {
         <textarea id="textarea1" rows="4" cols="70" readOnly></textarea>
       </div>
 
-      <br></br><br></br><br></br>
       <div className="search-container">
         <h2>Search Artists by Genre</h2>
         <select id="artistGenreName">
@@ -193,8 +192,6 @@ function SearchPage() {
         <textarea id="textarea2" rows="4" cols="70" readOnly></textarea>
       </div>
 
-      <br></br><br></br><br></br>
-
       <div className="search-container">
         <h2>Search Tracks by Song Name</h2>
         <input type="text" id="songName" />
@@ -202,8 +199,6 @@ function SearchPage() {
         <br></br><p>Results:</p>
         <textarea id="textarea3"rows="10" cols="70" readOnly></textarea>
       </div>
-
-      <br></br><br></br><br></br>
 
       <div className="search-container">
         <h2>Search Tracks by Artist</h2>

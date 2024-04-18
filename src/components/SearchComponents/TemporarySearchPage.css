@@ -2,16 +2,27 @@
 	background-color: rgba(192, 192, 192, 0.0); /* Silver background with 50% opacity */
 	margin: 100px;
 	margin-top: 0;
-  	max-height: 100vh;  /* Set the maximum height to 90% of the viewport height */
-  	overflow-y: auto;   /* Enable vertical scrolling */
-  	padding: 20px;      /* Optional: Add padding for better layout */
-  	box-sizing: border-box; /* Include padding in height calculation */
-  	overflow-y: auto;   /* Enable vertical scrolling */
+	max-height: 90vh;  /* Set the maximum height to 90% of the viewport height */
+	overflow-y: auto;   /* Enable vertical scrolling */
+	padding: 10px;      /* Optional: Add padding for better layout */
+	box-sizing: border-box; /* Include padding in height calculation */
+	overflow-y: auto;   /* Enable vertical scrolling */
+}
+
+
+/* Hide scrollbar for webkit (Chrome, Safari, Edge) */
+.search-page-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox scrollbar */
+.search-page-container {
+    scrollbar-width: none; /* For Firefox */
 }
 
 .search-container {
     background-color: rgba(192, 192, 192, 0.8); /* Silver background with 50% opacity */
-    padding: 1px; /* Padding inside the box for spacing */
+    padding: 10px; /* Padding inside the box for spacing */
     margin: 10px auto; /* Centers the box and provides space from other elements */
     max-width: 100%; /* Maximum width of the container */
     border-radius: 10px; /* Rounds the corners of the box */
@@ -22,7 +33,7 @@
 }
 
 .search-page-container h1 {
-  	text-align: left;
+  text-align: left;
 	margin-bottom: 0;
 	margin-top: 3vh;
 	padding: 0;
