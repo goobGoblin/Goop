@@ -4,26 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border: 1px solid #ccc;
+  background-color: rgba(240, 245, 245, 0.8); /* Very light silver background */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 10px;
   height: 100%; /* Takes full height of the grid cell */
   box-sizing: border-box; /* Includes padding and border in the height */
-  background-color: #f9f9f9; /* Light background for better readability */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .subgenre-item h5 {
-  margin-top: 0;
-  margin-bottom: 50px; /* Space between title and description */
-  font-size: 16px;
+  margin: 5px 0; /* Provides a consistent margin for top and bottom of the h5 */
+  margin-bottom: 0px; /* Space between title and description */
+  font-size: 24px;
   font-weight: bold;
   color: #333;
 }
 
 .subgenre-item p {
-  margin-top: 5px;
-  font-size: 14px;
+  margin: 10px 0; /* Provides a consistent margin for top and bottom of the h5 */
+  font-size: 18px;
   color: #666;
   text-align: center;
 }

@@ -7,14 +7,7 @@
   width: 100%; /* Full width */
 }
 
-.data-item {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: relative; /* Position relative for the absolute positioning of the pseudo-element */
-  overflow: hidden; /* Hide the overflow content */
-}
+
 
 .data-item::before {
   content: '';
