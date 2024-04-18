@@ -110,6 +110,24 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
       });
     });
 
+    // API endpoint to fetch tracks by artist name
+    app.get('/api/tracksByArtist', (req, res) => {
+      const artistName = req.query.artistName;
+      const query = `
+        SELECT Tracks.Title, Artists.Name
+        FROM Tracks
+        INNER JOIN Artists ON Tracks.ArtistID = Artists.ArtistID
+        WHERE Artists.Name = '${artistName}'
+      `;
+      connection.query(query, (error, results) => {
+        if (error) {
+          console.error('Error fetching tracks by artist:', error);
+          return res.status(500).send('Error fetching tracks by artist');
+        }
+        res.json(results);
+      });
+    });
+
   // Start the server
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
