@@ -1,38 +1,39 @@
-/* src/components/NavigationBar/NavigationBar.css */
 /* NavigationBar.css */
 .navigation-bar {
   display: flex;
-  /* Take up all available space */
-  justify-content: space-around; /* Space items evenly */
+  justify-content: space-around;
   min-height: 50px;
-	width: 100%;
-	backdrop-filter: blur(10px);
+  width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 .nav-item {
-  flex-grow: 1; /* Allow each item to grow */
+  flex-grow: 1;
   text-align: center;
   line-height: 50px;
-  /* Add your existing item styles here */
-	background-color: rgb(255, 255, 255);
-	text-decoration: none;
-	color: rgb(114, 114, 114);
+  background: radial-gradient(circle, white, silver);
+  text-decoration: none;
+  color: rgb(114, 114, 114);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-item:hover {
-  background-color: rgb(233, 233, 233);
+  background: radial-gradient(circle, silver, white);
+  color: #505050; /* Adjust the color to better fit your design if needed */
 }
 
-.nav-item-account {
-  background-color: rgb(90, 185, 216);
-	color: white;
+.nav-item-account, .nav-item-search {
+  background: radial-gradient(circle, white, silver);
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-item-account:hover {
-  background-color: rgb(85, 173, 202);
+.nav-item-account:hover, .nav-item-search:hover {
+  background: radial-gradient(circle, silver, white);
+  color: white;
 }
 
-.selected, .selected:hover {
-	background-color: rgb(216, 90, 155);
-	color: white;
+.selected, .nav-item.selected:hover {
+  background: radial-gradient(circle, black, silver);
+  color: white;
 }

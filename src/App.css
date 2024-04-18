@@ -19,6 +19,19 @@
 	opacity: 0.5;
 }
 
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  object-fit: cover; /* Cover the entire viewport without stretching. */
+}
+
 .content {
 	z-index: 10;
 	position: relative;
@@ -45,7 +58,7 @@
 	background-image: url('./Assets/noise.png'); /* Update with the correct path */
 	background-repeat: repeat;
 	background-size: 50%;
-	opacity: 0.3; 
-	pointer-events: none; 
+	opacity: 0.3;
+	pointer-events: none;
 	z-index: 0;
 }
