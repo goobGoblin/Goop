@@ -60,6 +60,25 @@ function SearchPage() {
         });
   }
 
+  function fetchTracksByArtist(name) {
+    // Return the promise chain from fetch
+    return fetch(`/api/tracksByArtist?artistName=${name}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Fetched tracks:', data);
+            return data;
+        })
+        .catch(error => {
+            console.error('Error fetching tracks:', error);
+            throw error;
+        });
+  }
+
   useEffect(() => {
     
   }, []);
@@ -102,6 +121,20 @@ function SearchPage() {
         string_result += "Track " + result[i].TrackID + ": " + result[i].Title + "\n";
       }
       document.getElementById("textarea3").value = string_result;
+    } catch (error) {
+      console.error('Failed to fetch tracks:', error);
+    }
+  }
+
+  const tracksByArtistSearchClick = async () => {
+    let artist = document.getElementById("artistName").value;
+    try {
+      let result = await fetchTracksByArtist(artist);
+      let string_result = "";
+      for (let i = 0; i < result.length; i++) {
+        string_result += result[i].Title + " - " + result[i].Name + "\n";
+      }
+      document.getElementById("textarea4").value = string_result;
     } catch (error) {
       console.error('Failed to fetch tracks:', error);
     }
@@ -164,6 +197,12 @@ function SearchPage() {
       <button id="titleSearch" onClick={titleSearchClick}>Search</button>
       <br></br><p>Results:</p>
       <textarea id="textarea3"rows="10" cols="70" readOnly></textarea>
+
+      <h2>Search Tracks by Artist</h2>
+      <input type="text" id="artistName" />
+      <button id="tracksByArtist" onClick={tracksByArtistSearchClick}>Search</button>
+      <br></br><p>Results:</p>
+      <textarea id="textarea4"rows="10" cols="70" readOnly></textarea>
     </div>
   );
 }
