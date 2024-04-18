@@ -3,25 +3,42 @@ import './TemporarySearchPage.css';
 
 function SearchPage() {
   function fetchTracksByID(genreID) {
-    fetch(`/api/tracks?genreID=${genreID}`)
-      .then(response => response.json())
-      .then(data => {
-        console.log('Fetched tracks:', data);
-      })
-      .catch(error => {
-        console.error('Error fetching subgenres:', error);
-      });
+    // Return the promise chain from fetch
+    return fetch(`/api/tracks?genreID=${genreID}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Fetched tracks:', data);
+            return data;
+        })
+        .catch(error => {
+            console.error('Error fetching tracks:', error);
+            throw error;
+        });
   }
 
+
   function fetchTracksByTitle(title) {
-    fetch(`/api/search?title=${title}`)
-      .then(response => response.json())
-      .then(data => {
-        console.log('Fetched tracks:', data);
-      })
-      .catch(error => {
-        console.error('Error fetching subgenres:', error);
-      });
+    // Return the promise chain from fetch
+    return fetch(`/api/search?title=${title}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Fetched tracks:', data);
+            return data;
+        })
+        .catch(error => {
+            console.error('Error fetching tracks:', error);
+            throw error;
+        });
   }
 
   useEffect(() => {
@@ -29,14 +46,33 @@ function SearchPage() {
   }, []);
   
 
-  const genreSearchClick = () => {
+  const genreSearchClick = async () => {
     let genre = document.getElementById("genreName").value;
-    fetchTracksByID(genre);
-  };
+    try {
+      let result = await fetchTracksByID(genre);
+      let string_result = "";
+      for (let i = 0; i < result.length; i++) {
+        string_result += "Track " + result[i].TrackID + ": " + result[i].Title + "\n";
+      }
+      document.getElementById("textarea1").value = string_result;
+    } catch (error) {
+        console.error('Failed to fetch tracks:', error);
+    }
+};
 
-  const titleSearchClick = () => {
+
+  const titleSearchClick = async () => {
     let title = document.getElementById("songName").value;
-    fetchTracksByTitle(title)
+    try {
+      let result = await fetchTracksByTitle(title);
+      let string_result = "";
+      for (let i = 0; i < result.length; i++) {
+        string_result += "Track " + result[i].TrackID + ": " + result[i].Title + "\n";
+      }
+      document.getElementById("textarea2").value = string_result;
+    } catch (error) {
+      console.error('Failed to fetch tracks:', error);
+    }
   }
 
   return (
@@ -61,9 +97,14 @@ function SearchPage() {
         <option value="16">Spoken Word</option>
       </select>
       <button id="genreSearch" onClick={genreSearchClick}>Search</button>
+      <br></br><p>Results:</p>
+      <textarea id="textarea1" rows="5" cols="70" readOnly></textarea>
+      <br></br><br></br><br></br><br></br>
       <h2>Search by Song Name</h2>
       <input type="text" id="songName" />
       <button id="titleSearch" onClick={titleSearchClick}>Search</button>
+      <br></br><p>Results:</p>
+      <textarea id="textarea2"rows="10" cols="70" readOnly></textarea>
     </div>
   );
 }

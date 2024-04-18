@@ -22,3 +22,7 @@
 	border: none;
 	border-radius: 20px;
 }
+
+.search-page-container textarea {
+	/* cursor: not-allowed; */
+}
