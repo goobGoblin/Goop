@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Genre.css';
-import Subgenre from '../Subgenre/Subgenre';
 
-function Genre({ genre }) {
-  const [showSubgenres, setShowSubgenres] = useState(false);
-
-  const toggleSubgenres = () => {
-    setShowSubgenres(!showSubgenres);
-  };
-
+function Genre({ genre, onGenreClick }) {
   return (
-    <div className="genres-container">
-      {/* do something */}
+    <div className="genre-container" onClick={() => onGenreClick(genre.GenreID)}>
+      <h1>{genre.Name}</h1>
+      <p>{genre.Description}</p>
     </div>
   );
 }
