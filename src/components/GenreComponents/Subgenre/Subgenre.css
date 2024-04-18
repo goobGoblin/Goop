@@ -12,6 +12,7 @@
   height: 100%; /* Takes full height of the grid cell */
   box-sizing: border-box; /* Includes padding and border in the height */
   border-radius: 10px; /* Rounded corners */
+  position: relative;
 }
 
 .subgenre-item h5 {
@@ -27,6 +28,15 @@
   font-size: 18px;
   color: #666;
   text-align: center;
+  display: none; /* Initially hide the description */
+  position: absolute; /* Position it absolutely */
+  bottom: 10px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.subgenre-item:hover p {
+  display: block; /* Show the description when hovering over the item */
 }
 
 .subgenre-item::before {
