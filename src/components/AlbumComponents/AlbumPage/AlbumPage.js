@@ -40,23 +40,32 @@ function AlbumPage() {
       });
   }, []);
 
+  const handleGenreClick = (genreID) => {
+      const genre = genres.find(g => g.GenreID === genreID);
+      if (!genre.albums.length) {
+        fetchAlbums(genreID);
+      } else {
+        toggleAlbumsDisplay(genreID);
+      }
+    };
+
+  const toggleAlbumsDisplay = (genreID) => {
+    const updatedGenres = genres.map(genre => ({
+      ...genre,
+      showAlbums: genre.GenreID === genreID ? !genre.showAlbums : genre.showAlbums
+    }));
+    setGenres(updatedGenres);
+  };
+
   return (
     <div className="album-page-container">
-      <h1>Albums</h1>
-      {genres.map((genre) => (
-        <Genre key={genre.GenreID} genre={genre} onGenreClick={() => {
-          if (!genre.albums.length) {
-            fetchAlbums(genre.GenreID);
-          }
-          const updatedGenres = genres.map(g => ({
-            ...g,
-            showAlbums: g.GenreID === genre.GenreID ? !g.showAlbums : g.showAlbums
-          }));
-          setGenres(updatedGenres);
-        }}/>
-      ))}
-      {genres.map((genre) => genre.showAlbums && (
-        <DataGrid key={genre.GenreID} items={genre.albums} Component={Album} />
+      {genres.map(genre => (
+        <div key={genre.GenreID}>
+          <Genre genre={genre} onGenreClick={() => handleGenreClick(genre.GenreID)} />
+          {genre.showAlbums && (
+            <DataGrid key={`album-${genre.GenreID}`} items={genre.albums} Component={Album} />
+          )}
+        </div>
       ))}
     </div>
   );

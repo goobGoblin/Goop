@@ -40,26 +40,36 @@ function MixPage() {
       });
   }, []);
 
+  const handleGenreClick = (genreID) => {
+    const genre = genres.find(g => g.GenreID === genreID);
+    if (!genre.mixes.length) {
+      fetchMixes(genreID);
+    } else {
+      toggleMixesDisplay(genreID);
+    }
+  };
+
+  const toggleMixesDisplay = (genreID) => {
+    const updatedGenres = genres.map(genre => ({
+      ...genre,
+      showMixes: genre.GenreID === genreID ? !genre.showMixes : genre.showMixes
+    }));
+    setGenres(updatedGenres);
+  };
+
   return (
     <div className="mix-page-container">
-      <h1>Mixes by Genre</h1>
-      {genres.map((genre) => (
-        <Genre key={genre.GenreID} genre={genre} onGenreClick={() => {
-          if (!genre.mixes.length) {
-            fetchMixes(genre.GenreID);
-          }
-          const updatedGenres = genres.map(g => ({
-            ...g,
-            showMixes: g.GenreID === genre.GenreID ? !g.showMixes : g.showMixes
-          }));
-          setGenres(updatedGenres);
-        }}/>
-      ))}
-      {genres.map((genre) => genre.showMixes && (
-        <DataGrid key={genre.GenreID} items={genre.mixes} Component={Mix} />
+      {genres.map(genre => (
+        <div key={genre.GenreID}>
+          <Genre genre={genre} onGenreClick={() => handleGenreClick(genre.GenreID)} />
+          {genre.showMixes && (
+            <DataGrid key={`mix-${genre.GenreID}`} items={genre.mixes} Component={Mix} />
+          )}
+        </div>
       ))}
     </div>
   );
 }
+
 
 export default MixPage;

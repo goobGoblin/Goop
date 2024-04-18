@@ -40,25 +40,35 @@ function ArtistPage() {
       });
   }, []);
 
+  const handleGenreClick = (genreID) => {
+    const genre = genres.find(g => g.GenreID === genreID);
+    if (!genre.artists.length) {
+      fetchArtists(genreID);
+    } else {
+      toggleArtistsDisplay(genreID);
+    }
+  };
+
+  const toggleArtistsDisplay = (genreID) => {
+    const updatedGenres = genres.map(genre => ({
+      ...genre,
+      showArtists: genre.GenreID === genreID ? !genre.showArtists : genre.showArtists
+    }));
+    setGenres(updatedGenres);
+  };
+
   return (
-    <div className="artist-page-container">
-      {genres.map((genre) => (
-        <Genre key={genre.GenreID} genre={genre} onGenreClick={() => {
-          if (!genre.artists.length) {
-            fetchArtists(genre.GenreID);
-          }
-          const updatedGenres = genres.map(g => ({
-            ...g,
-            showArtists: g.GenreID === genre.GenreID ? !g.showArtists : g.showArtists
-          }));
-          setGenres(updatedGenres);
-        }}/>
-      ))}
-      {genres.map((genre) => genre.showArtists && (
-        <DataGrid key={genre.GenreID} items={genre.artists} Component={Artist} />
-      ))}
-    </div>
-  );
+   <div className="artist-page-container">
+     {genres.map(genre => (
+       <div key={genre.GenreID}>
+         <Genre genre={genre} onGenreClick={() => handleGenreClick(genre.GenreID)} />
+         {genre.showArtists && (
+           <DataGrid key={`artist-${genre.GenreID}`} items={genre.artists} Component={Artist} />
+         )}
+       </div>
+     ))}
+   </div>
+ );
 }
 
 export default ArtistPage;
