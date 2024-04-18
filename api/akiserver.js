@@ -40,7 +40,7 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     });
   });
 
-  // API endpoint to fetch subgenres
+  // API endpoint to fetch subgenres that match a certani genreID
   app.get('/api/subgenres', (req, res) => {
     const genreID = req.query.genreID;
     const query = `
@@ -87,6 +87,24 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
         if (error) {
           console.error('Error searching tracks:', error);
           return res.status(500).send('Error searching tracks');
+        }
+        res.json(results);
+      });
+    });
+
+    // API endpoint to fetch artists based on genreID
+    app.get('/api/artists', (req, res) => {
+      const genreID = req.query.genreID;
+      const query = `
+        SELECT DISTINCT Artists.Name, Artists.Biography
+        FROM Artists
+        INNER JOIN Tracks ON Artists.ArtistID = Tracks.ArtistID
+        WHERE Tracks.GenreID = ${genreID}
+      `;
+      connection.query(query, (error, results) => {
+        if (error) {
+          console.error('Error fetching artists:', error);
+          return res.status(500).send('Error fetching artists');
         }
         res.json(results);
       });
