@@ -58,6 +58,40 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     });
   });
 
+    // API endpoint to fetch tracks based off GenreID
+    app.get('/api/tracks', (req, res) => {
+      const genreID = req.query.genreID;
+      const query = `
+        SELECT Title, TrackID
+        FROM Tracks
+        WHERE GenreID = ${genreID}
+      `;
+      connection.query(query, (error, results) => {
+        if (error) {
+          console.error('Error fetching tracks:', error);
+          return res.status(500).send('Error fetching tracks');
+        }
+        res.json(results);
+      });
+    });
+
+    // API endpoint to search tracks by title
+    app.get('/api/search', (req, res) => {
+      const searchQuery = req.query.title;
+      const query = `
+        SELECT Title, TrackID
+        FROM Tracks
+        WHERE Title LIKE '%${searchQuery}%'
+      `;
+      connection.query(query, (error, results) => {
+        if (error) {
+          console.error('Error searching tracks:', error);
+          return res.status(500).send('Error searching tracks');
+        }
+        res.json(results);
+      });
+    });
+
   // Start the server
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
