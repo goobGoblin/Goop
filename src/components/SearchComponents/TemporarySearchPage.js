@@ -142,67 +142,76 @@ function SearchPage() {
 
   return (
     <div className="search-page-container">
-      <h2>Search Tracks by Genre</h2>
-      <select id="trackGenreName">
-        <option value="1">Ambient</option>
-        <option value="2">Blues</option>
-        <option value="3">Classical Music</option>
-        <option value="4">Dance Music</option>
-        <option value="5">Electronic</option>
-        <option value="6">Industrial & Noise</option>
-        <option value="7">Jazz</option>
-        <option value="8">Metal</option>
-        <option value="9">Musical Theater and Entertainment</option>
-        <option value="10">New Age</option>
-        <option value="11">Pop</option>
-        <option value="12">Psychedelia</option>
-        <option value="13">Punk</option>
-        <option value="14">R&B</option>
-        <option value="15">Singer-Songwriter</option>
-        <option value="16">Spoken Word</option>
-      </select>
-      <button id="genreSearch" onClick={genreSearchClick}>Search</button>
-      <br></br><p>Results:</p>
-      <textarea id="textarea1" rows="4" cols="70" readOnly></textarea>
+      <div className="search-container">
+        <h2>Search Tracks by Genre</h2>
+        <select id="trackGenreName">
+          <option value="1">Ambient</option>
+          <option value="2">Blues</option>
+          <option value="3">Classical Music</option>
+          <option value="4">Dance Music</option>
+          <option value="5">Electronic</option>
+          <option value="6">Industrial & Noise</option>
+          <option value="7">Jazz</option>
+          <option value="8">Metal</option>
+          <option value="9">Musical Theater and Entertainment</option>
+          <option value="10">New Age</option>
+          <option value="11">Pop</option>
+          <option value="12">Psychedelia</option>
+          <option value="13">Punk</option>
+          <option value="14">R&B</option>
+          <option value="15">Singer-Songwriter</option>
+          <option value="16">Spoken Word</option>
+        </select>
+        <button id="genreSearch" onClick={genreSearchClick}>Search</button>
+        <br></br><p>Results:</p>
+        <textarea id="textarea1" rows="4" cols="70" readOnly></textarea>
+      </div>
+
+      <br></br><br></br><br></br>
+      <div className="search-container">
+        <h2>Search Artists by Genre</h2>
+        <select id="artistGenreName">
+          <option value="1">Ambient</option>
+          <option value="2">Blues</option>
+          <option value="3">Classical Music</option>
+          <option value="4">Dance Music</option>
+          <option value="5">Electronic</option>
+          <option value="6">Industrial & Noise</option>
+          <option value="7">Jazz</option>
+          <option value="8">Metal</option>
+          <option value="9">Musical Theater and Entertainment</option>
+          <option value="10">New Age</option>
+          <option value="11">Pop</option>
+          <option value="12">Psychedelia</option>
+          <option value="13">Punk</option>
+          <option value="14">R&B</option>
+          <option value="15">Singer-Songwriter</option>
+          <option value="16">Spoken Word</option>
+        </select>
+        <button id="artistSearch" onClick={artistSearchClick}>Search</button>
+        <br></br><p>Results:</p>
+        <textarea id="textarea2" rows="4" cols="70" readOnly></textarea>
+      </div>
 
       <br></br><br></br><br></br>
 
-      <h2>Search Artists by Genre</h2>
-      <select id="artistGenreName">
-        <option value="1">Ambient</option>
-        <option value="2">Blues</option>
-        <option value="3">Classical Music</option>
-        <option value="4">Dance Music</option>
-        <option value="5">Electronic</option>
-        <option value="6">Industrial & Noise</option>
-        <option value="7">Jazz</option>
-        <option value="8">Metal</option>
-        <option value="9">Musical Theater and Entertainment</option>
-        <option value="10">New Age</option>
-        <option value="11">Pop</option>
-        <option value="12">Psychedelia</option>
-        <option value="13">Punk</option>
-        <option value="14">R&B</option>
-        <option value="15">Singer-Songwriter</option>
-        <option value="16">Spoken Word</option>
-      </select>
-      <button id="artistSearch" onClick={artistSearchClick}>Search</button>
-      <br></br><p>Results:</p>
-      <textarea id="textarea2" rows="4" cols="70" readOnly></textarea>
+      <div className="search-container">
+        <h2>Search Tracks by Song Name</h2>
+        <input type="text" id="songName" />
+        <button id="titleSearch" onClick={titleSearchClick}>Search</button>
+        <br></br><p>Results:</p>
+        <textarea id="textarea3"rows="10" cols="70" readOnly></textarea>
+      </div>
 
       <br></br><br></br><br></br>
 
-      <h2>Search Tracks by Song Name</h2>
-      <input type="text" id="songName" />
-      <button id="titleSearch" onClick={titleSearchClick}>Search</button>
-      <br></br><p>Results:</p>
-      <textarea id="textarea3"rows="10" cols="70" readOnly></textarea>
-
-      <h2>Search Tracks by Artist</h2>
-      <input type="text" id="artistName" />
-      <button id="tracksByArtist" onClick={tracksByArtistSearchClick}>Search</button>
-      <br></br><p>Results:</p>
-      <textarea id="textarea4"rows="10" cols="70" readOnly></textarea>
+      <div className="search-container">
+        <h2>Search Tracks by Artist</h2>
+        <input type="text" id="artistName" />
+        <button id="tracksByArtist" onClick={tracksByArtistSearchClick}>Search</button>
+        <br></br><p>Results:</p>
+        <textarea id="textarea4"rows="10" cols="70" readOnly></textarea>
+      </div>
     </div>
   );
 }

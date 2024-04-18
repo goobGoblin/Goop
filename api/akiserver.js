@@ -117,7 +117,7 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
         SELECT Tracks.Title, Artists.Name
         FROM Tracks
         INNER JOIN Artists ON Tracks.ArtistID = Artists.ArtistID
-        WHERE Artists.Name = '${artistName}'
+        WHERE Artists.Name LIKE '%${artistName}%'
       `;
       connection.query(query, (error, results) => {
         if (error) {
