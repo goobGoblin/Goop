@@ -39,7 +39,7 @@ function GenrePage() {
     // const genreData = importAll(require.context('../../../../data_handling/raw_data/Genres-JSON', false, /\.json$/));
     // setGenres(genreData);
   }, []);
-  
+
 
   return (
     <div className="genre-page-container">
