@@ -6,14 +6,15 @@
   align-items: center;
   justify-content: flex-start;
   border: 1px solid #ccc;
-  background-color: rgba(240, 245, 245, 0.8); /* Very light silver background */
+  background-color: rgba(0, 0, 0, 0.3); /* Very light silver background */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 10px;
+  padding: 5px;
   height: 100%; /* Takes full height of the grid cell */
-  min-height: 100px; /* Minimum height to ensure the box is big enough */
   box-sizing: border-box; /* Includes padding and border in the height */
   border-radius: 10px; /* Rounded corners */
   position: relative;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
 }
 
 .subgenre-item h5 {
@@ -21,13 +22,13 @@
   padding: 0px; /* Add padding for spacing */
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: white;
 }
 
 .subgenre-item p {
   margin: 10px 0; /* Provides a consistent margin for top and bottom of the h5 */
   font-size: 18px;
-  color: #666;
+  color: white;
   text-align: center;
   display: block; /* Initially hide the description */
   position: relative; /* Position it absolutely */
@@ -52,5 +53,9 @@
 .subgenre-item::before {
   content: '';
   float: left;
-  padding-top: 10%; /* This maintains the aspect ratio */
+  padding-top: 2%; /* This maintains the aspect ratio */
+}
+
+* {
+
 }

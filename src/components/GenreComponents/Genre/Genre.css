@@ -1,5 +1,5 @@
 .genre-container {
-    background-color: rgba(192, 192, 192, 0.8); /* Silver background with 50% opacity */
+    background-color: rgba(192, 192, 192, 0.4); /* Silver background with 50% opacity */
     padding: 1px; /* Padding inside the box for spacing */
     margin: 10px auto; /* Centers the box and provides space from other elements */
     max-width: 100%; /* Maximum width of the container */
@@ -8,6 +8,10 @@
     color: #333; /* Sets the text color to a dark gray for contrast */
     font-size: 18px; /* Sets the size of the text inside the box */
     /* text-align: center; /* Aligns text to the center of the box */
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+
+
 }
 .genre-container h1 {
     margin-left: 20px; /* 10 pixel gap from the left edge */
@@ -18,5 +22,6 @@
 .genre-container p {
     text-align: left; /* Ensures the description text is left-aligned */
     margin-left: 20px; /* Aligns text with the h1 tag, remove if not necessary */
-    margin-right: 20px; 
+    margin-right: 20px;
+    font-weight: 500;
 }

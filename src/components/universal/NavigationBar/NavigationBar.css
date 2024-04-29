@@ -4,6 +4,7 @@
   justify-content: space-around;
   min-height: 50px;
   width: 100%;
+  opacity: 0.9;
   backdrop-filter: blur(10px);
 }
 
