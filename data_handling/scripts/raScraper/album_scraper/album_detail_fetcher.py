@@ -1,5 +1,7 @@
+# review_details.py
 import requests
 import json
+import re
 
 # Constants
 URL = 'https://ra.co/graphql'
@@ -8,46 +10,59 @@ HEADERS = {
     'Referer': 'https://ra.co',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0'
 }
-def fetch_review_details(review_id):
-    # Load the query and update the variable dynamically
+
+def fetch_album_details(review_id):
     with open('album_detail_template.json', 'r') as file:
         payload = json.load(file)
-        payload['variables']['id'] = review_id  # Dynamically set the review ID
+        payload['variables']['id'] = review_id
 
-    # Make the POST request to the GraphQL endpoint
     response = requests.post(URL, headers=HEADERS, json=payload)
     if response.status_code == 200:
-        return response.json()  # Returns the JSON response
+        return extract_specific_details(response.json())
     else:
-        raise Exception(f"Query failed to run with a status code {response.status_code}. {response.text}")
+        raise Exception(f"Query failed with status code {response.status_code}: {response.text}")
 
 def extract_specific_details(data):
-    # Extract specific data
-    review = data['data']['review']
-    genres = review.get('genres', [])
-    labels = review.get('labels', [])
-    tracklist = review.get('tracklist', '').split('\n')  # Split the tracklist by newline
-
-    # Print the required information
-    print("Genres:")
-    for genre in genres:
-        print(f"- {genre['name']} ({genre['slug']})")
-
-    print("\nLabels:")
-    for label in labels:
-        print(f"- {label['name']} (URL: {label['contentUrl']})")
-
-    print("\nTracklist (Excerpt):")
-    # Assuming you want to print only a subset of the tracklist
-    for track in tracklist:  # Print only first 5 tracks for brevity
-        print(f"- {track}")
-
-def main():
-    review_id = "36052"  # Example ID, replace or modify as necessary
     try:
-        review_data = fetch_review_details(review_id)
-        extract_specific_details(review_data)  # Extract and print only the relevant parts
+        review = data['data']['review']
+        
+        # Safe extraction of genres
+        genres = [{'name': g['name']} for g in review.get('genres', [])]
+
+        # Safe extraction of labels
+        labels = [{'name': l['name']} for l in review.get('labels', [])]
+
+        # Safe extraction of artists
+        artists = [{'name': a['name']} for a in review.get('artist', [])]
+
+        # Advanced extraction of tracklist
+        tracklist = review.get('tracklist', '').split('\n')
+        cleaned_tracklist = []
+        for line in tracklist:
+            if re.search('[a-zA-Z]', line):  # Check if the line contains any letters
+                # Remove non-letter characters before the first letter if the line starts with a non-letter
+                if re.match('[^a-zA-Z]+', line):
+                    # Remove all non-letter characters before the first letter
+                    cleaned_line = re.sub('^[^a-zA-Z]+', '', line)
+                    cleaned_tracklist.append(cleaned_line)
+                else:
+                    cleaned_tracklist.append(line.strip())
+            else:
+                # If no letters are present, keep the line as is
+                cleaned_tracklist.append(line)
+
+    except KeyError as e:
+        # Handle cases where expected keys are missing in the JSON data
+        print(f"Key error occurred: {e}")
+        return {'error': f"Missing data for key: {e}"}
     except Exception as e:
-        print(str(e))
-if __name__ == "__main__":
-    main()
+        # Handle other unforeseen errors that may occur
+        print(f"An error occurred: {e}")
+        return {'error': str(e)}
+
+    return {
+        'genres': genres,
+        'labels': labels,
+        'tracklist': cleaned_tracklist,
+        'artists': artists
+    }

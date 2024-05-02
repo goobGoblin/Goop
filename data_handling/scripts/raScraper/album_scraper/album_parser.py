@@ -41,7 +41,7 @@ def genre_iterator(genres):
 def main():
     genres = fetch_genres("genres.txt")  # Assuming this file exists with genres listed one per line
     genre_iterator(genres)
-    # get_genre_reviews('R&amp;B')
+    #get_genre_reviews('acid', "ALBUM")
 
 if __name__ == "__main__":
     main()

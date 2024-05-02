@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+from album_detail_fetcher import fetch_album_details
 
 URL = 'https://ra.co/graphql'
 HEADERS = {
@@ -56,7 +57,7 @@ class ReviewsFetcher:
         if 'data' not in data:
             print("Error in response data:", data)
             return {}
-            
+
         return data["data"]
 
     def print_reviews_details(self, reviews_data):
@@ -72,36 +73,56 @@ class ReviewsFetcher:
             print(f"Recommended: {review['recommended']}")
             print(f"Author: {review['author']['name']}")
             print("-" * 80)
+            print(f"{review['id']}")
 
     def save_review_details(self, reviews_data, genre_name, review_type):
         # Extract relevant data and reformat
         formatted_reviews = []
         for review in reviews_data.get('listing', {}).get('data', []):
+            # Split the title into artist and title
+            
+            id = review.get('id')
+            details = fetch_album_details(id)
+
+            title = review.get('title')
+
+            # Check for the number of dashes in the title
+            if title.count('-') == 1:  # Ensure there is exactly one dash
+                artist, title = map(str.strip, title.split('-'))  # Split by dash and strip any extra whitespace
+            else:
+                artist = None  # Set artist as None if no single dash is present
+                title = title  # Use the full title as is
             formatted_review = {
-                'Title': review.get('title'),
+                'Artist': artist,
+                'Title': title,
+                'Genre': details.get('genres'),
+                'Labels': details.get('labels'),
+                'Tracklist': details.get('tracklist'),
                 'Date': review.get('date'),
                 'Blurb': review.get('blurb'),
                 'Recommended': review.get('recommended', False),  # Default to False if not specified
-                'Author': review.get('author', {}).get('name', 'Unknown')  # Default to 'Unknown' if not available
+                'Author': review.get('author', {}).get('name', 'Unknown'),  # Default to 'Unknown' if not available
+                
             }
             formatted_reviews.append(formatted_review)
         
-         # Define the directory for genre JSON files
+        # Define the directory for genre JSON files
         genre_dir = 'Genres'
         cur_dir = os.path.join(genre_dir, review_type)
 
         if not os.path.exists(genre_dir):
             os.makedirs(genre_dir)
-
         if not os.path.exists(cur_dir):
             os.makedirs(cur_dir)
-            
+        
         # Define the file path using the genre name
-        file_path = os.path.join(genre_dir, review_type, f"{genre_name}.json")
+        file_path = os.path.join(cur_dir, f"{genre_name}.json")
         
         # Write the review data to the JSON file
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(formatted_reviews, f, ensure_ascii=False, indent=4)
         
         print(f"Review data for genre '{genre_name}' has been written to {file_path}")
+
+
 

@@ -70,6 +70,24 @@ CREATE TABLE Albums (
 	FOREIGN KEY (LabelID) REFERENCES Labels(LabelID)
 );
 
+-- Junction table for albums and genres
+CREATE TABLE AlbumGenres (
+    AlbumID INT,
+    GenreID INT,
+    PRIMARY KEY (AlbumID, GenreID),
+    FOREIGN KEY (AlbumID) REFERENCES Albums(AlbumID),
+    FOREIGN KEY (GenreID) REFERENCES Genres(GenreID)
+);
+
+-- Junction table for albums and labels
+CREATE TABLE AlbumLabels (
+    AlbumID INT,
+    LabelID INT,
+    PRIMARY KEY (AlbumID, LabelID),
+    FOREIGN KEY (AlbumID) REFERENCES Albums(AlbumID),
+    FOREIGN KEY (LabelID) REFERENCES Labels(LabelID)
+);
+
 -- Tracks Table
 CREATE TABLE Tracks (
 	TrackID INT AUTO_INCREMENT PRIMARY KEY,
