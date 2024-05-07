@@ -10,7 +10,7 @@ repo_path = os.path.abspath(os.path.join(script_dir, os.pardir))
 # Path to your repository
 repo = Repo(repo_path)
 
-commits = list(repo.iter_commits('main', max_count=40))  # Adjust branch and count as needed
+commits = list(repo.iter_commits('main', max_count=100))  # Adjust branch and count as needed
 
 # Prepare the LaTeX table code
 latex_table = "\\begin{tabular}{|c|c|c|}\n\\hline\n"

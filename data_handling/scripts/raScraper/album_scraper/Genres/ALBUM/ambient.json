@@ -1,5 +1,61 @@
 [
     {
+        "Artist": "NUG",
+        "Title": "Bong Boat",
+        "Genre": [
+            {
+                "name": "Ambient"
+            },
+            {
+                "name": "Experimental"
+            }
+        ],
+        "Labels": [
+            {
+                "name": "West Mineral Ltd."
+            }
+        ],
+        "Tracklist": [
+            "Row",
+            "Kneippen",
+            "Tide",
+            "Mud",
+            "Sky",
+            "Hull",
+            "Heat",
+            "Drift",
+            "Night"
+        ],
+        "Date": "2024-05-06",
+        "Blurb": "PVAS and Florian T M Zeisig make impressively murky ambient music on their second album as NUG.",
+        "Recommended": false,
+        "Author": "Daniel Bromfield"
+    },
+    {
+        "Artist": "Nexcyia",
+        "Title": "Endless Path of Memory",
+        "Genre": [
+            {
+                "name": "Ambient"
+            },
+            {
+                "name": "Experimental"
+            }
+        ],
+        "Labels": [
+            {
+                "name": "Pensaments Sònics"
+            }
+        ],
+        "Tracklist": [
+            ""
+        ],
+        "Date": "2024-05-05",
+        "Blurb": "Haunted elegies from a rising figure in the ambient underground.   \n",
+        "Recommended": false,
+        "Author": "Henry Ivry"
+    },
+    {
         "Artist": "Arushi Jain",
         "Title": "Delight",
         "Genre": [
@@ -29,7 +85,7 @@
             "Infinite Delight",
             "You Are Irresistible"
         ],
-        "Date": "2024-04-25T06:00:57.000Z",
+        "Date": "2024-04-25",
         "Blurb": "A luscious sound bath of modular synthesis and tranquil vocals that charts the Indian artist's inner quest for pleasure.",
         "Recommended": false,
         "Author": "Akili"
@@ -64,7 +120,7 @@
             "Airdrop 08 (Hinksey Hardcore) ",
             "Airdrop 09 (Cortina Outro)"
         ],
-        "Date": "2024-04-23T06:00:35.000Z",
+        "Date": "2024-04-23",
         "Blurb": "An album of beatless rave music that highlights the power of space and silence—and sub-bass.",
         "Recommended": false,
         "Author": "Dash Lewis"
@@ -99,7 +155,7 @@
             "u know me feat. shaun n don",
             "for the ones we love"
         ],
-        "Date": "2024-04-21T06:00:58.000Z",
+        "Date": "2024-04-21",
         "Blurb": "Motion Ward continues to grow with an earthy folk record from Ben Bondy and Mister Water Wet.\n",
         "Recommended": false,
         "Author": "Ted Davis"
@@ -135,7 +191,7 @@
             "w sunset blvd",
             "ily2 feat. Hand Habits"
         ],
-        "Date": "2024-04-19T06:00:06.000Z",
+        "Date": "2024-04-19",
         "Blurb": "The Canadian-American sound collagist pairs idyllic soundscapes with sincere, emo-influenced Autotuned vocal performances.",
         "Recommended": false,
         "Author": "Rae-Aila Crumble"
@@ -173,7 +229,7 @@
             "I Don't Sleep",
             "Anon's Song"
         ],
-        "Date": "2024-04-18T06:00:41.000Z",
+        "Date": "2024-04-18",
         "Blurb": "A bewitching mixture of sound collage, post-punk and avant-garde music with incisive lyrics.",
         "Recommended": true,
         "Author": "Conor McTernan"
@@ -206,7 +262,7 @@
             "Pas",
             "Eternal"
         ],
-        "Date": "2024-04-07T06:00:08.000Z",
+        "Date": "2024-04-07",
         "Blurb": "Blending spoken word, ambient and lowercase pop, the French artist shows why less is more.",
         "Recommended": false,
         "Author": "Joshua Minsoo Kim"
@@ -236,7 +292,7 @@
             "Beyond",
             "Below"
         ],
-        "Date": "2024-03-16T06:00:28.000Z",
+        "Date": "2024-03-16",
         "Blurb": "A keystone in the history of ambient music still sounds unique 40 years later.",
         "Recommended": false,
         "Author": "Daniel Bromfield"
@@ -274,7 +330,7 @@
             "Formation Flight",
             "The Unification of Inner & Outer Life"
         ],
-        "Date": "2024-03-03T06:00:18.000Z",
+        "Date": "2024-03-03",
         "Blurb": "Minimalist in the biggest sense of the word, stretched across organ, brass and voice.",
         "Recommended": true,
         "Author": "Conor McTernan"
@@ -307,7 +363,7 @@
             "Run It",
             "Hearing Colors"
         ],
-        "Date": "2024-02-26T06:00:05.000Z",
+        "Date": "2024-02-26",
         "Blurb": "Downtempo deepness for early in the night or late in the morning.",
         "Recommended": false,
         "Author": "Henry Ivry"
@@ -348,7 +404,7 @@
             "ccents",
             "ability"
         ],
-        "Date": "2024-02-07T07:00:11.000Z",
+        "Date": "2024-02-07",
         "Blurb": "Rough-and-ready techno from a core American underground dance music artist.\n",
         "Recommended": false,
         "Author": "Henry Ivry"
@@ -384,7 +440,7 @@
             "Garden",
             "Into The Sun"
         ],
-        "Date": "2024-01-29T06:00:13.000Z",
+        "Date": "2024-01-29",
         "Blurb": "The harpist sublimates her signature instrument into an atmospheric canvas for gauzy, candlelit love songs and spirituals.",
         "Recommended": true,
         "Author": "Emeka Okonkwo"
@@ -417,7 +473,7 @@
             "Lucrezia ",
             ""
         ],
-        "Date": "2024-01-26T06:00:27.000Z",
+        "Date": "2024-01-26",
         "Blurb": "The Rome maestro's first full-length since 2019 presents six cuts of soothing techno at its most human.",
         "Recommended": true,
         "Author": "Will Lynch"
@@ -447,7 +503,7 @@
             "Hudson River Wind (Blend The Ambiance)",
             "Wind Coda"
         ],
-        "Date": "2024-01-12T06:00:04.000Z",
+        "Date": "2024-01-12",
         "Blurb": "This newly reissued, and often beautiful, 2007 drone album shows the late New York firebrand's keen grasp of experimental music.",
         "Recommended": false,
         "Author": "Daniel Bromfield"
@@ -482,7 +538,7 @@
             "Florian's Flute",
             "Jane's Lament"
         ],
-        "Date": "2023-12-29T06:00:13.000Z",
+        "Date": "2023-12-29",
         "Blurb": "The revered ambient composer shifts gears to '70s style synth work on a relatively simple, yet wonderfully executed album.",
         "Recommended": false,
         "Author": "Daniel Bromfield"
@@ -525,7 +581,7 @@
             "D4 Suso Sáiz - Kailas",
             "D5 Dea - Undecenial"
         ],
-        "Date": "2023-12-22T06:00:55.000Z",
+        "Date": "2023-12-22",
         "Blurb": "A bittersweet celebration of one of the past decade's defining electronic music labels.",
         "Recommended": true,
         "Author": "Andrew Ryce"
@@ -556,7 +612,7 @@
             "Ants to You, Gods to Who?",
             "Dreams Once Buried Beneath the Dungeon Floor Slowly Sprout Into Undying Gardens"
         ],
-        "Date": "2023-12-08T06:00:41.000Z",
+        "Date": "2023-12-08",
         "Blurb": "John-Paul Shiver investigates the star rapper's turn to ambient music.",
         "Recommended": false,
         "Author": "John-Paul Shiver"
@@ -592,7 +648,7 @@
             "Scarper",
             "Last Transmission"
         ],
-        "Date": "2023-12-07T06:00:27.000Z",
+        "Date": "2023-12-07",
         "Blurb": "On his debut solo album, the British synth pop legend (and Depeche Mode cofounder) turns his hand to gloomy ambient.\n",
         "Recommended": false,
         "Author": "Alastair Shuttleworth"
@@ -631,76 +687,9 @@
             "Analysis Paralysis",
             "Cascade"
         ],
-        "Date": "2023-11-30T06:00:20.000Z",
+        "Date": "2023-11-30",
         "Blurb": "Ghostly ambient R&B and experimental soundscapes from an exciting new voice on Kranky.",
         "Recommended": false,
         "Author": "Dash Lewis"
-    },
-    {
-        "Artist": "Rainy Miller & Space Afrika",
-        "Title": "A Grisaille Wedding",
-        "Genre": [
-            {
-                "name": "Ambient"
-            },
-            {
-                "name": "Downtempo"
-            },
-            {
-                "name": "Experimental"
-            }
-        ],
-        "Labels": [
-            {
-                "name": "Fixed Abode"
-            }
-        ],
-        "Tracklist": [
-            ""
-        ],
-        "Date": "2023-11-23T06:00:58.000Z",
-        "Blurb": "The trio's first full-length together expands the Space Afrika narrative with a brilliant host of UK artists, demonstrating the excellence brewing in the North's experimental scenes.",
-        "Recommended": true,
-        "Author": "Kiana Mickles"
-    },
-    {
-        "Artist": "Klein",
-        "Title": "touched by an angel",
-        "Genre": [
-            {
-                "name": "Ambient"
-            },
-            {
-                "name": "Experimental"
-            },
-            {
-                "name": "Classical"
-            }
-        ],
-        "Labels": [
-            {
-                "name": "Parkwuud Entertainment"
-            }
-        ],
-        "Tracklist": [
-            "black famous",
-            "DJ drop",
-            "black timbs",
-            "the world is yours ensemble",
-            "storm",
-            "don't flop TV",
-            "bill feat. Matana Roberts & Khush",
-            "say black power and mean it",
-            "bunk",
-            "another day in the sun",
-            "street cred",
-            "daughter, brother and friend",
-            "no weapon shall form against me",
-            "big dreams inc."
-        ],
-        "Date": "2023-11-19T06:00:34.000Z",
-        "Blurb": "A 93-minute epic of modern classical and drone partly inspired by a '90s religious TV drama.",
-        "Recommended": true,
-        "Author": "Emeka Okonkwo"
     }
 ]

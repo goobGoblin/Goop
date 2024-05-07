@@ -1,8 +1,0 @@
-- Make API for backend to connect to database when populating components and pages on the front ends
-
-- Implement RYM Scraper API to get the top 50 albums from each genre in the SQL Genre table and add the albums to the albums table
-- Implement RYM Scraper API to populate the artists and other info about them from the albums table and add it to the Artists TABLE
-- Implement RYM Scraper to populate the track info from the tracks within the albums table
-
-- Implement 1001 Tracklist API to add mixes to the database
-- Implement RYM API to populate the track into the SQL tables using the mixes added by 1001 tracklist API

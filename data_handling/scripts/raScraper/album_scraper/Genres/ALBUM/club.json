@@ -1,5 +1,39 @@
 [
     {
+        "Artist": "bbymutha",
+        "Title": "sleep paralysis",
+        "Genre": [
+            {
+                "name": "Hip-Hop"
+            },
+            {
+                "name": "Club"
+            }
+        ],
+        "Labels": [
+            {
+                "name": "True Panther Sounds"
+            }
+        ],
+        "Tracklist": [
+            "gun kontrol",
+            "piss!",
+            "head x shoulders",
+            "rich",
+            "tony hawk",
+            "lines",
+            "nice/nasty",
+            "ghostface",
+            "final girl",
+            "mutha massacre",
+            "go!"
+        ],
+        "Date": "2024-05-02",
+        "Blurb": "bbymutha pivots towards UK club music without losing her distinct Southern rap charm and bite.",
+        "Recommended": false,
+        "Author": "Akili"
+    },
+    {
         "Artist": "Justice",
         "Title": "Hyperdrama",
         "Genre": [
@@ -36,7 +70,7 @@
             "Saturnine",
             "The End"
         ],
-        "Date": "2024-04-29T06:00:33.000Z",
+        "Date": "2024-04-29",
         "Blurb": "A star-studded comeback that almost touches on the French duo's past greatness.",
         "Recommended": false,
         "Author": "Emeka Okonkwo"
@@ -69,7 +103,7 @@
             "Third Freeze",
             "We Smiled Together"
         ],
-        "Date": "2024-04-27T06:00:57.000Z",
+        "Date": "2024-04-27",
         "Blurb": "Vulnerable yet powerful IDM-influenced dance music.",
         "Recommended": false,
         "Author": "Arielle Lana LeJarde"
@@ -104,7 +138,7 @@
             "Airdrop 08 (Hinksey Hardcore) ",
             "Airdrop 09 (Cortina Outro)"
         ],
-        "Date": "2024-04-23T06:00:35.000Z",
+        "Date": "2024-04-23",
         "Blurb": "An album of beatless rave music that highlights the power of space and silence—and sub-bass.",
         "Recommended": false,
         "Author": "Dash Lewis"
@@ -139,7 +173,7 @@
             "uggy feat. Moist Briefs",
             "Ur trauma feat. Delic'amarr & Midas P"
         ],
-        "Date": "2024-04-13T06:00:38.000Z",
+        "Date": "2024-04-13",
         "Blurb": "A jam-packed album of footwork, electro, jungle and jazz that marks a production milestone for the genre-fluid Toronto artist.",
         "Recommended": false,
         "Author": "Nyshka Chandran"
@@ -172,7 +206,7 @@
             "Closing In",
             "Third Time's The Charm"
         ],
-        "Date": "2024-04-11T06:00:37.000Z",
+        "Date": "2024-04-11",
         "Blurb": "Big-room techno, Leonce style.",
         "Recommended": true,
         "Author": "Andrew Ryce"
@@ -206,7 +240,7 @@
             "Problem 4 Problems",
             "Ain't Sh*t Sweet"
         ],
-        "Date": "2024-04-09T06:00:08.000Z",
+        "Date": "2024-04-09",
         "Blurb": "The New York rapper lets loose with newfound conviction over a laidback offering of deep house and early '00s R&B.",
         "Recommended": false,
         "Author": "Kiana Mickles"
@@ -243,7 +277,7 @@
             "Grannie's Cherry Pie",
             "The Precision Of Infinity feat. Philip Glass"
         ],
-        "Date": "2024-04-01T06:00:48.000Z",
+        "Date": "2024-04-01",
         "Blurb": "A thrilling fusion of classical and electronic music from the reigning champ.\n",
         "Recommended": true,
         "Author": "Miguel Otárola"
@@ -275,7 +309,7 @@
             "Wanguila",
             "Fantasias "
         ],
-        "Date": "2024-03-26T06:00:28.000Z",
+        "Date": "2024-03-26",
         "Blurb": "The defining Príncipe artist returns with a transcendental shift in sound.",
         "Recommended": true,
         "Author": "Akili"
@@ -316,7 +350,7 @@
             "Still",
             ""
         ],
-        "Date": "2024-03-21T06:00:57.000Z",
+        "Date": "2024-03-21",
         "Blurb": "Cassius Select morphs into an R&B singer-songwriter to paint a nuanced picture of a breakup.",
         "Recommended": false,
         "Author": "Sophie McNulty"
@@ -353,7 +387,7 @@
             "Make It Work",
             "Smoke Break feat. HomeSick & Takuya Nakamar"
         ],
-        "Date": "2024-03-20T06:00:56.000Z",
+        "Date": "2024-03-20",
         "Blurb": "Heavee fleshes out his vibrant style of footwork with an RPG-style narrative of self-discovery.",
         "Recommended": true,
         "Author": "Joseph Francis"
@@ -394,7 +428,7 @@
             "Reptant – Protectors Of The Moss",
             "Edward – Blurry Trees And Peanuts"
         ],
-        "Date": "2024-03-13T06:00:25.000Z",
+        "Date": "2024-03-13",
         "Blurb": "The Frankfurt label celebrates ten years with a record of cerebral IDM and bass-heavy contortions.",
         "Recommended": false,
         "Author": "Henry Ivry"
@@ -434,7 +468,7 @@
             "Leif - Kallt",
             "RAMZi - doomies"
         ],
-        "Date": "2024-03-12T06:00:41.000Z",
+        "Date": "2024-03-12",
         "Blurb": "Wisdom Teeth celebrates ten years with a typically lush compilation from a stacked crew of contributors.\n",
         "Recommended": true,
         "Author": "Ted Davis"
@@ -466,7 +500,7 @@
             "Diminished Ark",
             "Sounding Bodies"
         ],
-        "Date": "2024-03-10T06:00:22.000Z",
+        "Date": "2024-03-10",
         "Blurb": "Appleblim and Adam Wedge make dubby DIY dance music with brilliant sound design on Peak Oil.",
         "Recommended": false,
         "Author": "Joseph Francis"
@@ -507,7 +541,7 @@
             "Someone",
             ""
         ],
-        "Date": "2024-03-08T06:00:30.000Z",
+        "Date": "2024-03-08",
         "Blurb": "After massive songwriting success, Erika de Casier retreats into her world of bedroom R&B but opens up her sound to new ideas and collaborators.",
         "Recommended": false,
         "Author": "Andrew Ryce"
@@ -549,7 +583,7 @@
             "AULA DE PUTARIA #BRAAAABA ",
             "ULTIMO MEDO DO ANO"
         ],
-        "Date": "2024-03-06T12:00:27.000Z",
+        "Date": "2024-03-06",
         "Blurb": "A stunning album that showcases the ghostly, barebones funk of the Brazilian city of Belo Horizonte, with a cast of guest vocalists from across the country.",
         "Recommended": true,
         "Author": "Felipe Maia"
@@ -589,7 +623,7 @@
             "Raver1",
             "New Cosmo"
         ],
-        "Date": "2024-02-28T10:00:10.000Z",
+        "Date": "2024-02-28",
         "Blurb": "Virtuosic techno with a healthy dose of uplift and optimism.",
         "Recommended": true,
         "Author": "Emeka Okonkwo"
@@ -631,7 +665,7 @@
             "Lo pregunto",
             "Lago menor"
         ],
-        "Date": "2024-02-20T06:00:56.000Z",
+        "Date": "2024-02-20",
         "Blurb": "The N.A.A.F.I artist presents a sprawling debut album inspired by the natural beauty and precolonial history of Mexico City's largest park.",
         "Recommended": true,
         "Author": "Akili"
@@ -678,7 +712,7 @@
             "D2 XS-5 – I Need More (Extended Dance Version)",
             "D3 Liquid Liquid – Optimo"
         ],
-        "Date": "2024-02-17T06:00:36.000Z",
+        "Date": "2024-02-17",
         "Blurb": "A tribute to (and recollection of) one of the greatest club nights in the history of dance music.",
         "Recommended": true,
         "Author": "Erin Margaret Day"
@@ -724,47 +758,9 @@
             "Far Away (DJ LHC Remix)",
             "Far Away (SUUTOO His Eye Is On the Raven Remix feat. Ms. Carrie Stacks)"
         ],
-        "Date": "2024-02-12T06:00:00.000Z",
+        "Date": "2024-02-12",
         "Blurb": "A group of over 20 underground producers, rappers and vocalists go all out on a remix album that makes a good case for the format.",
         "Recommended": true,
         "Author": "Kiana Mickles"
-    },
-    {
-        "Artist": "T.Williams",
-        "Title": "Raves Of Future Past",
-        "Genre": [
-            {
-                "name": "Grime"
-            },
-            {
-                "name": "Club"
-            },
-            {
-                "name": "Jungle"
-            }
-        ],
-        "Labels": [
-            {
-                "name": "Purple City Souffle"
-            }
-        ],
-        "Tracklist": [
-            "Deepest Vibe",
-            "Climbing Purple",
-            "Step In 2",
-            "Jammy",
-            "Cheery Coke",
-            "T-4000",
-            "Love All You Squares",
-            "She Loves",
-            "Aggy",
-            "Garvey Words",
-            "Set Trends",
-            "You Will See"
-        ],
-        "Date": "2024-02-09T06:00:35.000Z",
-        "Blurb": "A sharp blend of grime, garage, UK funky and Afro house that distills the sounds of London into a powerful, punchy LP.",
-        "Recommended": true,
-        "Author": "Andrew Ryce"
     }
 ]

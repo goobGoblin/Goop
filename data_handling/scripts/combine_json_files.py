@@ -1,3 +1,4 @@
+# Combines Genre JSON Files so that they can be more easily added to tables
 import json
 import os
 

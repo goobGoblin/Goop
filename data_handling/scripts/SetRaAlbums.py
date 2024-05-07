@@ -1,3 +1,4 @@
+# Adds albums and tracks from resident advisor to database. 
 import os
 import json
 import pymysql
@@ -106,8 +107,8 @@ def process_album_entry(album):
             # Insert the album if not found
             if not album_entry:
                 cursor.execute(
-                    "INSERT INTO Albums (title, ArtistID, blurb, recommended) VALUES (%s, %s, %s, %s)",
-                    (album['Title'], artist_id, album.get('Blurb'), album['Recommended'])
+                    "INSERT INTO Albums (title, ReleaseDate, ArtistID, blurb, recommended) VALUES (%s, %s, %s, %s, %s)",
+                    (album['Title'], album['Date'], artist_id, album.get('Blurb'), album['Recommended'])
                 )
                 connection.commit()
                 album_id = cursor.lastrowid  # Retrieve the ID of the newly inserted album correctly here

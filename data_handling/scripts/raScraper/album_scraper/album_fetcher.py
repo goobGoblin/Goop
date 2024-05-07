@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import datetime
 from album_detail_fetcher import fetch_album_details
 
 URL = 'https://ra.co/graphql'
@@ -86,6 +87,15 @@ class ReviewsFetcher:
 
             title = review.get('title')
 
+            # Extract and reformat the date
+            iso_date_str = review.get('date')
+            if iso_date_str:
+                # Convert ISO 8601 date to a date object and format it to only show the date
+                date_obj = datetime.datetime.fromisoformat(iso_date_str.rstrip('Z'))  # Remove 'Z' before conversion
+                date = date_obj.strftime('%Y-%m-%d')
+            else:
+                date = None  # Handle cases where no date is provided
+
             # Check for the number of dashes in the title
             if title.count('-') == 1:  # Ensure there is exactly one dash
                 artist, title = map(str.strip, title.split('-'))  # Split by dash and strip any extra whitespace
@@ -98,7 +108,7 @@ class ReviewsFetcher:
                 'Genre': details.get('genres'),
                 'Labels': details.get('labels'),
                 'Tracklist': details.get('tracklist'),
-                'Date': review.get('date'),
+                'Date': date,
                 'Blurb': review.get('blurb'),
                 'Recommended': review.get('recommended', False),  # Default to False if not specified
                 'Author': review.get('author', {}).get('name', 'Unknown'),  # Default to 'Unknown' if not available

@@ -31,7 +31,7 @@
             "Caoilfhionn Rose - Paths",
             "Mike Salta & Marty Mortale - Henry's Spacewalk"
         ],
-        "Date": "2022-07-12T06:00:39.000Z",
+        "Date": "2022-07-12",
         "Blurb": "The long-time DJ and radio host redefines what Balearic is and can be on this beautiful, sometimes eye-opening compilation.",
         "Recommended": false,
         "Author": "Emeka Okonkwo"
@@ -62,7 +62,7 @@
             "P.N.G. (Praise No Ghosts)",
             "Jungle Dream"
         ],
-        "Date": "2020-04-01T06:00:09.000Z",
+        "Date": "2020-04-01",
         "Blurb": "The Australian artist builds a world within five club tracks.",
         "Recommended": false,
         "Author": "Ryan Keeling"
@@ -96,7 +96,7 @@
             "Bird Again",
             "RAMZi's Anthem feat. C.K. U Kno"
         ],
-        "Date": "2020-01-16T06:00:03.000Z",
+        "Date": "2020-01-16",
         "Blurb": "\"Fifth World\" fusions with a Balearic warmth. ",
         "Recommended": false,
         "Author": "April Clare Welsh"
@@ -128,7 +128,7 @@
             "Omlagus Garfungiloops\t",
             "Theme From Gay Man's Guide To Safer Sex"
         ],
-        "Date": "2019-07-15T06:00:39.000Z",
+        "Date": "2019-07-15",
         "Blurb": "This soundtrack to a 1992 instructional video is among the best music in Coil's vast catalog.",
         "Recommended": true,
         "Author": "Andrew Ryce"
@@ -156,7 +156,7 @@
             "Message Of The Diving Bird",
             "Le Soleil Dans Le Monde"
         ],
-        "Date": "2018-09-21T06:00:20.000Z",
+        "Date": "2018-09-21",
         "Blurb": "A gentle yet catchy collection of Balearic jams.",
         "Recommended": false,
         "Author": "Beaty DNA"
@@ -192,7 +192,7 @@
             "Gatto Fritto - Invisible College",
             ""
         ],
-        "Date": "2017-09-28T06:00:27.000Z",
+        "Date": "2017-09-28",
         "Blurb": null,
         "Recommended": false,
         "Author": "Bruce Tantum"
@@ -225,7 +225,7 @@
             "Kuume (Last Gitar)",
             "Puhallus (One Mo, Pad Conga Vocoder Mix)"
         ],
-        "Date": "2017-09-11T06:00:44.000Z",
+        "Date": "2017-09-11",
         "Blurb": null,
         "Recommended": false,
         "Author": "Will Lynch"
@@ -255,7 +255,7 @@
             "Police Bribe ",
             "Lime"
         ],
-        "Date": "2017-03-14T07:00:31.000Z",
+        "Date": "2017-03-14",
         "Blurb": null,
         "Recommended": false,
         "Author": "Aaron Coultate"
@@ -285,7 +285,7 @@
             "Kingdom Animalia",
             "Healing Feeling"
         ],
-        "Date": "2017-01-17T07:00:27.000Z",
+        "Date": "2017-01-17",
         "Blurb": null,
         "Recommended": false,
         "Author": "Beaty DNA"
@@ -320,7 +320,7 @@
             "Flow System ",
             "DTMF "
         ],
-        "Date": "2016-11-03T07:00:39.000Z",
+        "Date": "2016-11-03",
         "Blurb": null,
         "Recommended": false,
         "Author": "Beaty DNA"
@@ -358,7 +358,7 @@
             "Gryningen - Früh Andra Hand Till Strñnderna I Nice ",
             "Hatchback - White Diamond "
         ],
-        "Date": "2016-10-12T07:00:13.000Z",
+        "Date": "2016-10-12",
         "Blurb": null,
         "Recommended": false,
         "Author": "Derek Miller"
@@ -386,7 +386,7 @@
             "Applepie Dreams\t",
             "Glade Runner"
         ],
-        "Date": "2016-07-14T07:00:48.000Z",
+        "Date": "2016-07-14",
         "Blurb": null,
         "Recommended": false,
         "Author": "Beaty DNA"
@@ -418,7 +418,7 @@
             "Forgotten Island ",
             "One Slow Thought "
         ],
-        "Date": "2016-07-05T07:00:55.000Z",
+        "Date": "2016-07-05",
         "Blurb": null,
         "Recommended": false,
         "Author": "Andrew Ryce"
@@ -450,7 +450,7 @@
             "Treasure ",
             "The Flying Man "
         ],
-        "Date": "2016-06-11T07:00:53.000Z",
+        "Date": "2016-06-11",
         "Blurb": null,
         "Recommended": false,
         "Author": "Beaty DNA"
@@ -478,7 +478,7 @@
             "Lighthouse On Chatham Sound ",
             "Vermont"
         ],
-        "Date": "2016-02-27T07:00:44.000Z",
+        "Date": "2016-02-27",
         "Blurb": null,
         "Recommended": false,
         "Author": "Andrew Ryce"
@@ -508,7 +508,7 @@
             "Tacotac ",
             "Beats Benny Keats "
         ],
-        "Date": "2016-02-05T07:00:06.000Z",
+        "Date": "2016-02-05",
         "Blurb": null,
         "Recommended": false,
         "Author": "Matt McDermott"
@@ -530,19 +530,19 @@
             }
         ],
         "Tracklist": [
-            "Jackie feat Michaela ",
-            "Chances Are ",
-            "Missing You feat El Javi  ",
-            "My Room ",
-            "Set It Up ",
-            "Combination ",
-            "Walkaway ",
-            "Tangiers ",
-            "Who ",
-            "The Bright Light Of The Truth  ",
+            "Jackie feat Michaela  ",
+            "Chances Are  ",
+            "Missing You feat El Javi   ",
+            "My Room  ",
+            "Set It Up  ",
+            "Combination  ",
+            "Walkaway  ",
+            "Tangiers  ",
+            "Who  ",
+            "The Bright Light Of The Truth   ",
             "Stations "
         ],
-        "Date": "2015-09-27T07:00:47.000Z",
+        "Date": "2015-09-27",
         "Blurb": null,
         "Recommended": false,
         "Author": "Derek Miller"
@@ -575,7 +575,7 @@
             "The Island I've Never Been ",
             "Green Days"
         ],
-        "Date": "2015-09-02T07:00:48.000Z",
+        "Date": "2015-09-02",
         "Blurb": null,
         "Recommended": false,
         "Author": "Patric Fallon"
@@ -607,7 +607,7 @@
             "Un Jour Avec Yussef ",
             "Le Château De Corail "
         ],
-        "Date": "2015-07-17T07:00:27.000Z",
+        "Date": "2015-07-17",
         "Blurb": null,
         "Recommended": false,
         "Author": "Aaron Coultate"
@@ -641,7 +641,7 @@
             "Blitz Magic ",
             "Remember Me "
         ],
-        "Date": "2015-06-25T07:00:28.000Z",
+        "Date": "2015-06-25",
         "Blurb": null,
         "Recommended": false,
         "Author": "Derek Miller"

@@ -1,3 +1,4 @@
+# Adds Genres and Subgenres from JSON files to database
 import os
 import json
 import pymysql

@@ -1,5 +1,98 @@
 [
     {
+        "Artist": "Sega Bodega",
+        "Title": "Dennis",
+        "Genre": [
+            {
+                "name": "Experimental"
+            },
+            {
+                "name": "Pop"
+            }
+        ],
+        "Labels": [
+            {
+                "name": "ambient tweets"
+            }
+        ],
+        "Tracklist": [
+            "Coma Dennis",
+            "Adulter8",
+            "Elk Skin",
+            "Kepko",
+            "Dirt",
+            "Set Me Free, I'm An Animal",
+            "Deer Teeth",
+            "True",
+            "Tears & Sighs",
+            "Humiliation Doesn't Leave A Mark",
+            "Coma Salv"
+        ],
+        "Date": "2024-05-07",
+        "Blurb": "The adventurous producer paints bold strokes of folk and indie rock alongside his usual lurid electronics for an intriguing new LP on a new label.",
+        "Recommended": false,
+        "Author": "Kiana Mickles"
+    },
+    {
+        "Artist": null,
+        "Title": "Broadcast - Spell Blanket - Collected Demos 2006​-​2009",
+        "Genre": [
+            {
+                "name": "Experimental"
+            },
+            {
+                "name": "Pop"
+            }
+        ],
+        "Labels": [
+            {
+                "name": "Warp Records"
+            }
+        ],
+        "Tracklist": [
+            "The Song Before the Song Comes Out",
+            "March of the Fleas",
+            "Greater Than Joy",
+            "Mother Plays Games",
+            "My Marble Eye",
+            "Roses Red",
+            "Hip Bone to Hip Bone",
+            "Running Back to Me",
+            "I Blink You Blink",
+            "Infant Girl",
+            "I Run in Dreams",
+            "Luminous Image",
+            "A Little Light",
+            "Hairpin Memories",
+            "My Body",
+            "Follow the Light",
+            "Tunnel View",
+            "Where Are You?",
+            "Singing Game",
+            "I Want to Be Fine",
+            "The Games You Play",
+            "Grey Grey Skies",
+            "Puzzle",
+            "The Clock Is on Fire",
+            "Petal Alphabet",
+            "Tell Table",
+            "Fatherly Veil",
+            "Dream Power",
+            "Heartbeat",
+            "Call Sign",
+            "Crone Motion",
+            "Sleeping Bed",
+            "Join in Together",
+            "Colour in the Numbers",
+            "I Am the Bridge",
+            "Spirit House"
+        ],
+        "Date": "2024-05-03",
+        "Blurb": "A gripping set of demos outlining what Broadcast's unfinished last album could have been, with all the duo's brilliance intact.",
+        "Recommended": true,
+        "Author": "Marshall Gu"
+    },
+    {
         "Artist": "UTO",
         "Title": "When all you want to do is be the fire part of fire",
         "Genre": [
@@ -26,7 +119,7 @@
             "Lyrics",
             "Bredouille feat. HSRS"
         ],
-        "Date": "2024-05-01T06:00:44.000Z",
+        "Date": "2024-05-01",
         "Blurb": "Gripping, emotionally complex leftfield dance pop on InFiné.",
         "Recommended": false,
         "Author": "Emeka Okonkwo"
@@ -68,7 +161,7 @@
             "Saturnine",
             "The End"
         ],
-        "Date": "2024-04-29T06:00:33.000Z",
+        "Date": "2024-04-29",
         "Blurb": "A star-studded comeback that almost touches on the French duo's past greatness.",
         "Recommended": false,
         "Author": "Emeka Okonkwo"
@@ -103,7 +196,7 @@
             "Waves",
             "Hard To Do"
         ],
-        "Date": "2024-04-26T06:00:52.000Z",
+        "Date": "2024-04-26",
         "Blurb": "Finally—the straight-up Bullion pop album we've all been waiting for.",
         "Recommended": true,
         "Author": "Sophie McNulty"
@@ -139,7 +232,7 @@
             "Last Night I Dreamt I Was Alone",
             "Unlucky for Some… "
         ],
-        "Date": "2024-04-22T06:00:07.000Z",
+        "Date": "2024-04-22",
         "Blurb": "An impressive, mainstream-baiting heel turn from the leftfield UK producer that occasionally pulls too many punches.",
         "Recommended": false,
         "Author": "Reid BG"
@@ -174,7 +267,7 @@
             "u know me feat. shaun n don",
             "for the ones we love"
         ],
-        "Date": "2024-04-21T06:00:58.000Z",
+        "Date": "2024-04-21",
         "Blurb": "Motion Ward continues to grow with an earthy folk record from Ben Bondy and Mister Water Wet.\n",
         "Recommended": false,
         "Author": "Ted Davis"
@@ -210,7 +303,7 @@
             "w sunset blvd",
             "ily2 feat. Hand Habits"
         ],
-        "Date": "2024-04-19T06:00:06.000Z",
+        "Date": "2024-04-19",
         "Blurb": "The Canadian-American sound collagist pairs idyllic soundscapes with sincere, emo-influenced Autotuned vocal performances.",
         "Recommended": false,
         "Author": "Rae-Aila Crumble"
@@ -250,7 +343,7 @@
             "H2D feat. Bladee & Ecco2k ",
             "Skenet feat. Ecco2k"
         ],
-        "Date": "2024-04-15T06:00:59.000Z",
+        "Date": "2024-04-15",
         "Blurb": "A star-studded album of dreamy rap and pop that sometimes obscures the Swedish producer's signature touch.",
         "Recommended": false,
         "Author": "Daniel Bromfield"
@@ -290,7 +383,7 @@
             "So Tell Me…",
             ""
         ],
-        "Date": "2024-04-12T06:00:17.000Z",
+        "Date": "2024-04-12",
         "Blurb": "UK jungle's brightest young hope presents an infectious blend of heavy breaks and deep introspection. \n",
         "Recommended": true,
         "Author": "Fred Garratt-Stanley"
@@ -323,7 +416,7 @@
             "Pas",
             "Eternal"
         ],
-        "Date": "2024-04-07T06:00:08.000Z",
+        "Date": "2024-04-07",
         "Blurb": "Blending spoken word, ambient and lowercase pop, the French artist shows why less is more.",
         "Recommended": false,
         "Author": "Joshua Minsoo Kim"
@@ -356,7 +449,7 @@
             "Talking To The Whisper",
             "Who Brings Me"
         ],
-        "Date": "2024-03-29T06:00:30.000Z",
+        "Date": "2024-03-29",
         "Blurb": "Shoegaze? Dream pop? Baroque? Holter's latest album is all of these at once, and utterly singular.",
         "Recommended": true,
         "Author": "Emeka Okonkwo"
@@ -398,7 +491,7 @@
             "Grown On Me",
             ""
         ],
-        "Date": "2024-03-28T06:00:04.000Z",
+        "Date": "2024-03-28",
         "Blurb": "Soaring pop aspirations meet slinky club rollers on the Australian producer's debut LP.",
         "Recommended": false,
         "Author": "Henry Ivry"
@@ -439,7 +532,7 @@
             "Still",
             ""
         ],
-        "Date": "2024-03-21T06:00:57.000Z",
+        "Date": "2024-03-21",
         "Blurb": "Cassius Select morphs into an R&B singer-songwriter to paint a nuanced picture of a breakup.",
         "Recommended": false,
         "Author": "Sophie McNulty"
@@ -475,7 +568,7 @@
             "B4 Kowloon",
             "B5 Cosmic Rendez-Vous"
         ],
-        "Date": "2024-03-14T06:00:55.000Z",
+        "Date": "2024-03-14",
         "Blurb": "Exploring his mother's Hong Kong roots, the Belgian musician's debut solo album is a powerful blend of folk music, field recordings and catchy synth pop.\n",
         "Recommended": true,
         "Author": "Marshall Gu"
@@ -516,7 +609,7 @@
             "Someone",
             ""
         ],
-        "Date": "2024-03-08T06:00:30.000Z",
+        "Date": "2024-03-08",
         "Blurb": "After massive songwriting success, Erika de Casier retreats into her world of bedroom R&B but opens up her sound to new ideas and collaborators.",
         "Recommended": false,
         "Author": "Andrew Ryce"
@@ -557,7 +650,7 @@
             "Two of Us (Friendsnlovers pt. 2)",
             "Replacements feat. La Roux"
         ],
-        "Date": "2024-03-05T06:00:43.000Z",
+        "Date": "2024-03-05",
         "Blurb": "20 years in, the Canadian duo pull together a solid album that shows keeping the funk alive is harder than it looks.",
         "Recommended": false,
         "Author": "Katie Thomas"
@@ -593,7 +686,7 @@
             "Lucky Me",
             "to 10"
         ],
-        "Date": "2024-03-01T06:00:22.000Z",
+        "Date": "2024-03-01",
         "Blurb": "Josiah Wise shoots for the stars on his third album, taking a bold step toward the mainstream with a clubbier sound and guest features from Ty Dolla $ign and Mick Jenkins.",
         "Recommended": false,
         "Author": "Joseph Francis"
@@ -639,7 +732,7 @@
             "Far Away (DJ LHC Remix)",
             "Far Away (SUUTOO His Eye Is On the Raven Remix feat. Ms. Carrie Stacks)"
         ],
-        "Date": "2024-02-12T06:00:00.000Z",
+        "Date": "2024-02-12",
         "Blurb": "A group of over 20 underground producers, rappers and vocalists go all out on a remix album that makes a good case for the format.",
         "Recommended": true,
         "Author": "Kiana Mickles"
@@ -675,82 +768,9 @@
             "Garden",
             "Into The Sun"
         ],
-        "Date": "2024-01-29T06:00:13.000Z",
+        "Date": "2024-01-29",
         "Blurb": "The harpist sublimates her signature instrument into an atmospheric canvas for gauzy, candlelit love songs and spirituals.",
         "Recommended": true,
         "Author": "Emeka Okonkwo"
-    },
-    {
-        "Artist": "Bruce",
-        "Title": "Not Ready For Love",
-        "Genre": [
-            {
-                "name": "Pop"
-            },
-            {
-                "name": "Club"
-            }
-        ],
-        "Labels": [
-            {
-                "name": "Timedance"
-            }
-        ],
-        "Tracklist": [
-            "Rush Of Love",
-            "Dappled Light",
-            "Cala Mastella",
-            "Flakes",
-            "In The Pines",
-            "Hot One",
-            "Antler",
-            "Complaint",
-            "Broken",
-            "Zampano",
-            "I'm His Ex",
-            "Smaller Things",
-            "Lasso",
-            "Moonsistent"
-        ],
-        "Date": "2024-01-22T06:00:28.000Z",
-        "Blurb": "Bruce goes avant-pop.",
-        "Recommended": false,
-        "Author": "Reid BG"
-    },
-    {
-        "Artist": "Satoshi Suzuki",
-        "Title": "Distant Travel Companion",
-        "Genre": [
-            {
-                "name": "Downtempo"
-            },
-            {
-                "name": "Funk / Soul"
-            },
-            {
-                "name": "Pop"
-            }
-        ],
-        "Labels": [
-            {
-                "name": "Incidental Music"
-            }
-        ],
-        "Tracklist": [
-            "Situation (Situation In The Passenger Seat)",
-            "Passing Scene",
-            "Miss Shooting ",
-            "A Gray Moment) ",
-            "Forgiveness Without Reservation ~ Lover And Coffee Connoisseur) ",
-            "Wardrobeの中の夢 (A Dream In The Wardrobe)",
-            "Clear Autumn Day) ",
-            "Evening Sea Breeze)",
-            "Spouse-同行者- (Traveling Companion) ",
-            "One By One "
-        ],
-        "Date": "2023-11-25T06:00:18.000Z",
-        "Blurb": "A welcome compilation that highlights an overlooked artist from thriving 1980s Japan.",
-        "Recommended": false,
-        "Author": "Shy Thompson"
     }
 ]
