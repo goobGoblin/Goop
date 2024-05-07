@@ -11,3 +11,10 @@ __pycache__
 *.html
 */__pycache__
 try.py
+
+# Report ignores
+FinalReport.aux
+FinalReport.log
+FinalReport.out
+FinalReport.toc
+

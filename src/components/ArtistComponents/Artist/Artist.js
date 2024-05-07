@@ -7,7 +7,7 @@ const Artist = ({ artist }) => {
     <div className="artist-item">
       <h5>{artist.Name}</h5> {/* Replace 'Name' with the property name for artist's name */}
       <p>{artist.Biograpraphy}</p> {/* Replace 'Biography' with the property name for artist's bio */}
-      {/* Add more artist details as needed */}
+      {/* Get the artists genres and subgenres */}
     </div>
   );
 };
