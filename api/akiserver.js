@@ -93,32 +93,32 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     });
 
     // API endpoint to get albums by Genre
-    app.get('/albums/by-genre/:genreName', (req, res) => {
-      const genreName = req.params.genreName;
-      const query = `
-          SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.name AS GenreName
-          FROM Albums
-          JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
-          JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
-          WHERE Genres.name = ?;
-      `;
-      pool.query(query, [genreName], (error, results) => {
-          if (error) {
-              res.status(500).json({ error: 'Internal server error' });
-          } else {
-              res.json(results);
-          }
-      });
-    });
+    // app.get('/albums/by-genre/:genreName', (req, res) => {
+    //   const genreName = req.params.genreName;
+    //   const query = `
+    //       SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.name AS GenreName
+    //       FROM Albums
+    //       JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
+    //       JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
+    //       WHERE Genres.name = ?;
+    //   `;
+    //   pool.query(query, [genreName], (error, results) => {
+    //       if (error) {
+    //           res.status(500).json({ error: 'Internal server error' });
+    //       } else {
+    //           res.json(results);
+    //       }
+    //   });
+    // });
   
     // API endpoint to get albums by GenreID
-    app.get('/api/albums/by-genre-id/:genreID', (req, res) => {
+    app.get('/api/albums/basic-album-by-genre/:genreID', (req, res) => {
       const genreID = req.params.genreID;
       const query = `
           SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.Name AS GenreName
           FROM Albums
-          JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
-          JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
+          JOIN AlbumGenres ON Albums.AlbumID = AlbumGenres.AlbumID
+          JOIN Genres ON AlbumGenres.GenreID = Genres.GenreID
           WHERE Genres.GenreID = ?;
       `;
       connection.query(query, [genreID], (error, results) => {
@@ -129,6 +129,24 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
           }
       });
     });
+
+    // API endpoint to get more detailed album details by querying a view we made
+    app.get('/api/albums/details/:albumID', (req, res) => {
+      const albumID = req.params.albumID;
+      const query = `
+        SELECT *
+        FROM DetailedAlbums
+        WHERE AlbumID = ?;
+      `;
+      connection.query(query, [albumID], (error, results) => {
+        if (error) {
+          res.status(500).json({ error: 'Internal server error' });
+        } else {
+          res.json(results[0]); // Assuming only one record will be returned
+        }
+      });
+    });
+    
 
 
     // API endpoint to fetch artists based on genreID

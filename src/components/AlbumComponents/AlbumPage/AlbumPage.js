@@ -1,34 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import './AlbumPage.css';
 import AlbumGrid from '../Album/AlbumGrid';
+import Genre from '../../GenreComponents/Genre/Genre';
 import Album from '../Album/Album';
 
 function AlbumPage() {
-  const [genres, setGenres] = useState([]);
+  const Filter = 'Genre';
   const [albums, setAlbums] = useState({});
-
+  const [genres, setGenres] = useState([]);
+  
   const fetchAlbums = (genreID) => {
-    fetch(`/api/albums/by-genre-id/${genreID}`)
-      .then(response => {
-        console.log(response); // Check the raw response
-        return response.json();
-      })
-      .then(data => {
-        console.log("Albums data:", data);
-        setAlbums(prev => ({ ...prev, [genreID]: data }));
-      })
-      .catch(error => {
-        console.error('Error fetching albums:', error);
-      })
+    fetch(`/api/albums/basic-album-by-genre/${genreID}`)
       .then(response => response.json())
       .then(data => {
-        console.log("Albums data:", data);
+        console.log("Basic Albums data:", data);
         setAlbums(prev => ({ ...prev, [genreID]: data }));
       })
       .catch(error => {
-        console.error('Error fetching albums:', error);
+        console.error('Error fetching basic album info:', error);
       });
   };
+  
 
   useEffect(() => {
     fetch('/api/genres')
@@ -54,7 +46,7 @@ function AlbumPage() {
     <div className="album-page-container">
       {genres.map(genre => (
         <div key={genre.GenreID} onClick={() => handleGenreClick(genre.GenreID)}>
-          <h3>{genre.Name}</h3>
+          <Genre genre={genre} onGenreClick={handleGenreClick} />
           {albums[genre.GenreID] && (
             <AlbumGrid albums={albums[genre.GenreID]} />
           )}
