@@ -32,7 +32,8 @@ const Album = ({ album }) => {
 
   return (
     <div className="album-item" onClick={toggleTrackList}>
-      <h5>{detailedAlbum.ArtistName || 'Unknown Artist'} - {detailedAlbum.Title || 'No Title Available'}</h5>
+      <h5 id = "album-artist">{detailedAlbum.ArtistName || 'Unknown Artist'}</h5>
+			<h5 id = "album-title">{detailedAlbum.Title || 'No Title Available'}</h5>
       <p>Genres: {detailedAlbum.Genres || 'No Genres Listed'}</p>
       <p>Subgenres: {detailedAlbum.Subgenres || 'No Subgenres Listed'}</p>
       {showTrackList && (

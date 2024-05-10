@@ -34,3 +34,8 @@ h4 {
 h5 {
 	font-size: 1rem;
 }
+
+li {
+	font-family: 'IBM	Plex Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	font-weight: 400;
+}
