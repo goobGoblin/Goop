@@ -11,6 +11,7 @@ function GenrePage() {
     fetch(`/api/subgenres?genreID=${genreID}`)
       .then(response => response.json())
       .then(data => {
+        console.log("Subgenres data:", data);  // Add this line to inspect the data structure
         const newGenres = genres.map(genre => {
           if (genre.GenreID === genreID) {
             return { ...genre, subgenres: data, showSubgenres: !genre.showSubgenres };
@@ -63,7 +64,7 @@ function GenrePage() {
         <div key={genre.GenreID}>
           <Genre genre={genre} onGenreClick={handleGenreClick} />
           {genre.showSubgenres && (
-            <DataGrid key={`subgenre-${genre.GenreID}`} items={genre.subgenres} Component={Subgenre} />
+            <DataGrid key={`subgenre-${genre.GenreID}`} items={genre.subgenres} Component={Subgenre} contentType="subgenre" />
           )}
         </div>
       ))}

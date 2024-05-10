@@ -92,6 +92,45 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
       });
     });
 
+    // API endpoint to get albums by Genre
+    app.get('/albums/by-genre/:genreName', (req, res) => {
+      const genreName = req.params.genreName;
+      const query = `
+          SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.name AS GenreName
+          FROM Albums
+          JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
+          JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
+          WHERE Genres.name = ?;
+      `;
+      pool.query(query, [genreName], (error, results) => {
+          if (error) {
+              res.status(500).json({ error: 'Internal server error' });
+          } else {
+              res.json(results);
+          }
+      });
+    });
+  
+    // API endpoint to get albums by GenreID
+    app.get('/api/albums/by-genre-id/:genreID', (req, res) => {
+      const genreID = req.params.genreID;
+      const query = `
+          SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.Name AS GenreName
+          FROM Albums
+          JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
+          JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
+          WHERE Genres.GenreID = ?;
+      `;
+      connection.query(query, [genreID], (error, results) => {
+          if (error) {
+              res.status(500).json({ error: 'Internal server error' });
+          } else {
+              res.json(results);
+          }
+      });
+    });
+
+
     // API endpoint to fetch artists based on genreID
     app.get('/api/artists', (req, res) => {
       const genreID = req.query.genreID;

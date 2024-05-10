@@ -1,23 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import Genre from '../../GenreComponents/Genre/Genre';
-import Album from '../Album/Album';
-import DataGrid from '../../universal/DataGrid/DataGrid';
 import './AlbumPage.css';
+import AlbumGrid from '../Album/AlbumGrid';
+import Album from '../Album/Album';
 
 function AlbumPage() {
   const [genres, setGenres] = useState([]);
+  const [albums, setAlbums] = useState({});
 
   const fetchAlbums = (genreID) => {
-    fetch(`/api/albums?genreID=${genreID}`)
+    fetch(`/api/albums/by-genre-id/${genreID}`)
+      .then(response => {
+        console.log(response); // Check the raw response
+        return response.json();
+      })
+      .then(data => {
+        console.log("Albums data:", data);
+        setAlbums(prev => ({ ...prev, [genreID]: data }));
+      })
+      .catch(error => {
+        console.error('Error fetching albums:', error);
+      })
       .then(response => response.json())
       .then(data => {
-        const newGenres = genres.map(genre => {
-          if (genre.GenreID === genreID) {
-            return { ...genre, albums: data, showAlbums: !genre.showAlbums };
-          }
-          return genre;
-        });
-        setGenres(newGenres);
+        console.log("Albums data:", data);
+        setAlbums(prev => ({ ...prev, [genreID]: data }));
       })
       .catch(error => {
         console.error('Error fetching albums:', error);
@@ -28,12 +34,7 @@ function AlbumPage() {
     fetch('/api/genres')
       .then(response => response.json())
       .then(data => {
-        const updatedGenres = data.map(genre => ({
-          ...genre,
-          albums: [],
-          showAlbums: false
-        }));
-        setGenres(updatedGenres);
+        setGenres(data);
       })
       .catch(error => {
         console.error('Error fetching genres:', error);
@@ -41,29 +42,21 @@ function AlbumPage() {
   }, []);
 
   const handleGenreClick = (genreID) => {
-      const genre = genres.find(g => g.GenreID === genreID);
-      if (!genre.albums.length) {
-        fetchAlbums(genreID);
-      } else {
-        toggleAlbumsDisplay(genreID);
-      }
-    };
-
-  const toggleAlbumsDisplay = (genreID) => {
-    const updatedGenres = genres.map(genre => ({
-      ...genre,
-      showAlbums: genre.GenreID === genreID ? !genre.showAlbums : genre.showAlbums
-    }));
-    setGenres(updatedGenres);
+    if (!albums[genreID]) {
+      fetchAlbums(genreID);
+    } else {
+      // Toggle display of the albums for this genre
+      setAlbums(prev => ({ ...prev, [genreID]: prev[genreID] ? null : prev[genreID] }));
+    }
   };
 
   return (
     <div className="album-page-container">
       {genres.map(genre => (
-        <div key={genre.GenreID}>
-          <Genre genre={genre} onGenreClick={() => handleGenreClick(genre.GenreID)} />
-          {genre.showAlbums && (
-            <DataGrid key={`album-${genre.GenreID}`} items={genre.albums} Component={Album} />
+        <div key={genre.GenreID} onClick={() => handleGenreClick(genre.GenreID)}>
+          <h3>{genre.Name}</h3>
+          {albums[genre.GenreID] && (
+            <AlbumGrid albums={albums[genre.GenreID]} />
           )}
         </div>
       ))}
