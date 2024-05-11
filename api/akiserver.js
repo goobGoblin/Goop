@@ -157,10 +157,23 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     //   });
     // });
 
-
     
-
-
+    // API endpoint to fetch labels
+    app.get('/api/labels', (req, res) => {
+      const query = `
+        SELECT Name
+        FROM Labels
+        ORDER BY Name ASC
+      `;
+      connection.query(query, (error, results) => {
+        if (error) {
+          console.error('Error fetching labels:', error);
+          return res.status(500).send('Error fetching labels');
+        }
+        res.json(results);
+      });
+    })
+    
     // API endpoint to fetch artists based on genreID
     app.get('/api/artists', (req, res) => {
       const genreID = req.query.genreID;
