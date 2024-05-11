@@ -36,6 +36,7 @@ const Album = ({ album }) => {
 			<h5 id = "album-title">{detailedAlbum.Title || 'No Title Available'}</h5>
       <p>Genres: {detailedAlbum.Genres || 'No Genres Listed'}</p>
       <p>Subgenres: {detailedAlbum.Subgenres || 'No Subgenres Listed'}</p>
+      <p>Recommended: {detailedAlbum.recommended || 'Not Recommended'}</p>
       {showTrackList && (
         <div>
           <p>Tracks:</p>

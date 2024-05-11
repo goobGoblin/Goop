@@ -4,6 +4,9 @@ const fs = require('fs');
 const app = express();
 const port = 3001;
 
+// Import album routes
+const albumRoutes = require('./routes/albumRoutes');
+
 // Grabbing from config.json (DO NOT PUSH CONFIG.JSON)
 fs.readFile('../config.json', 'utf8', (err, data) => {
   if (err) {
@@ -23,6 +26,28 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
       return console.error('Error connecting to the database:', error);
     }
     console.log('Connected to the MySQL server.');
+  });
+
+  // Use album routes, passing the connection object
+  app.use('/api/albums', albumRoutes(connection));
+
+  app.get('/api/albums/details/:albumID', (req, res) => {
+    const albumID = req.params.albumID;
+    const query = `
+        SELECT *
+        FROM DetailedAlbums
+        WHERE AlbumID = ?;
+    `;
+    connection.query(query, [albumID], (error, results) => {
+        if (error) {
+            console.error('Database query error:', error);
+            res.status(500).json({ error: 'Internal server error', details: error });
+        } else if (results.length === 0) {
+            res.status(404).json({ error: 'No record found' });
+        } else {
+            res.json(results[0]); // Assuming only one record will be returned
+        }
+    });
   });
 
   // API endpoint to fetch genres
@@ -111,41 +136,28 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     //   });
     // });
   
-    // API endpoint to get albums by GenreID
-    app.get('/api/albums/basic-album-by-genre/:genreID', (req, res) => {
-      const genreID = req.params.genreID;
-      const query = `
-          SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.Name AS GenreName
-          FROM Albums
-          JOIN AlbumGenres ON Albums.AlbumID = AlbumGenres.AlbumID
-          JOIN Genres ON AlbumGenres.GenreID = Genres.GenreID
-          WHERE Genres.GenreID = ?;
-      `;
-      connection.query(query, [genreID], (error, results) => {
-          if (error) {
-              res.status(500).json({ error: 'Internal server error' });
-          } else {
-              res.json(results);
-          }
-      });
-    });
 
-    // API endpoint to get more detailed album details by querying a view we made
-    app.get('/api/albums/details/:albumID', (req, res) => {
-      const albumID = req.params.albumID;
-      const query = `
-        SELECT *
-        FROM DetailedAlbums
-        WHERE AlbumID = ?;
-      `;
-      connection.query(query, [albumID], (error, results) => {
-        if (error) {
-          res.status(500).json({ error: 'Internal server error' });
-        } else {
-          res.json(results[0]); // Assuming only one record will be returned
-        }
-      });
-    });
+
+    // API endpoint to get albums by GenreID
+    // app.get('/api/albums/basic-album-by-genre/:genreID', (req, res) => {
+    //   const genreID = req.params.genreID;
+    //   const query = `
+    //       SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.Name AS GenreName
+    //       FROM Albums
+    //       JOIN AlbumGenres ON Albums.AlbumID = AlbumGenres.AlbumID
+    //       JOIN Genres ON AlbumGenres.GenreID = Genres.GenreID
+    //       WHERE Genres.GenreID = ?;
+    //   `;
+    //   connection.query(query, [genreID], (error, results) => {
+    //       if (error) {
+    //           res.status(500).json({ error: 'Internal server error' });
+    //       } else {
+    //           res.json(results);
+    //       }
+    //   });
+    // });
+
+
     
 
 

@@ -35,6 +35,7 @@ SELECT
     A.AlbumID,
     A.Title,
     A.ReleaseDate,
+    A.recommended,  
     Artists.Name AS ArtistName,
     GROUP_CONCAT(DISTINCT Genres.Name ORDER BY Genres.Name SEPARATOR ', ') AS Genres,
     GROUP_CONCAT(DISTINCT Subgenres.SubgenreName ORDER BY Subgenres.SubgenreName SEPARATOR ', ') AS Subgenres,
@@ -45,7 +46,8 @@ LEFT JOIN AlbumGenres ON A.AlbumID = AlbumGenres.AlbumID
 LEFT JOIN Genres ON AlbumGenres.GenreID = Genres.GenreID
 LEFT JOIN Subgenres ON AlbumGenres.SubgenreID = Subgenres.SubgenreID
 LEFT JOIN Tracks ON A.AlbumID = Tracks.AlbumID
-GROUP BY A.AlbumID, A.Title, A.ReleaseDate, Artists.Name
+GROUP BY A.AlbumID;
+
 
 -- EXAMPLE USAGE:
 -- SELECT * FROM DetailedAlbums WHERE AlbumID = [Specific AlbumID];

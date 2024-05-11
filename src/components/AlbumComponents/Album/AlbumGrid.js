@@ -10,9 +10,11 @@ const AlbumGrid = ({ albums }) => {
 
   return (
     <div className="album-grid-container">
-      {albums.map((album, index) => (
-        <Album key={index} album={album} />
-      ))}
+
+        {albums.map((album) => (
+            <Album key={album.AlbumID} album={album} />
+        ))}
+
     </div>
   );
 };
