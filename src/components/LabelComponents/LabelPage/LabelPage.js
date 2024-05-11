@@ -1,13 +1,31 @@
-import React from 'react';
-import './LabelPage.css'; // Import the CSS file for styling
+import React, { useState, useEffect } from 'react';
+import './LabelPage.css';
+import LabelGrid from '../Label/LabelGrid';
+import Label from '../Label/Label';
 
 function LabelPage() {
+  const [labels, setLabels] = useState([]);
+
+  // Fetch labels
+  const fetchLabels = () => {
+    let url = '/api/labels';
+
+    fetch(`${url}`)
+      .then(response => response.json())
+      .then(data => {
+        setLabels(data);
+      })
+      .catch(error => {
+        console.error('Error fetching label info:', error);
+      });
+  };
+  useEffect(() => {
+    fetchLabels();
+  }, []);
+
   return (
     <div className="label-page-container">
-      <h1>Labels</h1>
-			<p className="description">CLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie pulvinar diam, a semper turpis iaculis eu. Suspendisse vel dapibus leo. Duis lacinia quam.</p>
-
-			<p className="easter-egg">🫶</p>
+      <LabelGrid labels={labels} />
     </div>
   );
 }
