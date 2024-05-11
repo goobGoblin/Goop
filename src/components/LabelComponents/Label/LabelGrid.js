@@ -1,17 +1,15 @@
+// LabelGrid.js
 import React from 'react';
 import Label from './Label';
-import './LabelGrid.css';
+import './LabelGrid.css'; // Make sure to create appropriate CSS for styling
 
 const LabelGrid = ({ labels }) => {
-  if (!Array.isArray(labels)) {
-    console.error('LabelGrid expected an array, but received:', labels);
-    return <div>No labels available or data is incorrect.</div>;
-  }
+  if (!labels || labels.length === 0) return <p>No labels found.</p>;
 
   return (
     <div className="label-grid-container">
-      {labels.map((label, index) => (
-        <Label key={index} label={label} />
+      {labels.map(label => (
+        <Label key={label.Name} label={label} />
       ))}
     </div>
   );

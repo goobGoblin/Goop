@@ -1,30 +1,21 @@
+// LabelPage.js
 import React, { useState, useEffect } from 'react';
-import './LabelPage.css';
 import LabelGrid from '../Label/LabelGrid';
-import Label from '../Label/Label';
+import './LabelPage.css'; // Make sure to create appropriate CSS for styling
 
 function LabelPage() {
   const [labels, setLabels] = useState([]);
 
-  // Fetch labels
-  const fetchLabels = () => {
-    let url = '/api/labels';
-
-    fetch(`${url}`)
-      .then(response => response.json())
-      .then(data => {
-        setLabels(data);
-      })
-      .catch(error => {
-        console.error('Error fetching label info:', error);
-      });
-  };
   useEffect(() => {
-    fetchLabels();
+    fetch('/api/labels')
+      .then(response => response.json())
+      .then(data => setLabels(data))
+      .catch(error => console.error('Error fetching labels:', error));
   }, []);
 
   return (
     <div className="label-page-container">
+      <h1>Labels</h1>
       <LabelGrid labels={labels} />
     </div>
   );

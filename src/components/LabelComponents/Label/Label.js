@@ -1,28 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './Label.css';
+// Label.js
+import React from 'react';
+import './Label.css'; // Make sure to create appropriate CSS for styling
 
-const Label = () => {
-  const [normalLabel, setLabel] = useState(null);
-
-  // Fetch detailed information for this label
-  useEffect(() => {
-    const fetchLabels = async () => {
-      try {
-        const response = await fetch(`/api/labels`);
-        const data = await response.json();
-        setLabel(data);
-      } catch (error) {
-        console.error('Error fetching detailed label info:', error);
-        setLabel(null); // Handle error by setting normalLabel to null
-      }
-    };
-
-    fetchLabels();
-  }, []); // Fetch details whenever the label ID changes
-
+const Label = ({ label }) => {
   return (
     <div className="label-item">
-      <h5 id = "label-artist">{normalLabel.Name || 'Unknown Name'}</h5>
+      <h4>{label.Name}</h4>
     </div>
   );
 };
