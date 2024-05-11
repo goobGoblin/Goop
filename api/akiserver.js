@@ -31,6 +31,7 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
   // Use album routes, passing the connection object
   app.use('/api/albums', albumRoutes(connection));
 
+  // Fetch Detailed Albums
   app.get('/api/albums/details/:albumID', (req, res) => {
     const albumID = req.params.albumID;
     const query = `
@@ -65,7 +66,7 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
     });
   });
 
-  // API endpoint to fetch subgenres that match a certani genreID
+  // API endpoint to fetch subgenres that match a certain genreID
   app.get('/api/subgenres', (req, res) => {
     const genreID = req.query.genreID;
     const query = `
@@ -117,47 +118,6 @@ fs.readFile('../config.json', 'utf8', (err, data) => {
       });
     });
 
-    // API endpoint to get albums by Genre
-    // app.get('/albums/by-genre/:genreName', (req, res) => {
-    //   const genreName = req.params.genreName;
-    //   const query = `
-    //       SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.name AS GenreName
-    //       FROM Albums
-    //       JOIN AlbumGenre ON Albums.AlbumID = AlbumGenre.AlbumID
-    //       JOIN Genres ON AlbumGenre.GenreID = Genres.GenreID
-    //       WHERE Genres.name = ?;
-    //   `;
-    //   pool.query(query, [genreName], (error, results) => {
-    //       if (error) {
-    //           res.status(500).json({ error: 'Internal server error' });
-    //       } else {
-    //           res.json(results);
-    //       }
-    //   });
-    // });
-  
-
-
-    // API endpoint to get albums by GenreID
-    // app.get('/api/albums/basic-album-by-genre/:genreID', (req, res) => {
-    //   const genreID = req.params.genreID;
-    //   const query = `
-    //       SELECT Albums.AlbumID, Albums.Title, Albums.ArtistID, Genres.Name AS GenreName
-    //       FROM Albums
-    //       JOIN AlbumGenres ON Albums.AlbumID = AlbumGenres.AlbumID
-    //       JOIN Genres ON AlbumGenres.GenreID = Genres.GenreID
-    //       WHERE Genres.GenreID = ?;
-    //   `;
-    //   connection.query(query, [genreID], (error, results) => {
-    //       if (error) {
-    //           res.status(500).json({ error: 'Internal server error' });
-    //       } else {
-    //           res.json(results);
-    //       }
-    //   });
-    // });
-
-    
     // API endpoint to fetch labels
     app.get('/api/labels', (req, res) => {
       const query = `
