@@ -8,13 +8,21 @@ const AlbumGrid = ({ albums }) => {
     return <div>No albums available or data is incorrect.</div>;
   }
 
+  // Filter out duplicate albums based on their ID
+  const uniqueAlbums = albums.reduce((acc, current) => {
+    const x = acc.find(item => item.AlbumID === current.AlbumID);
+    if (!x) {
+      return acc.concat([current]);
+    } else {
+      return acc;
+    }
+  }, []);
+
   return (
     <div className="album-grid-container">
-
-        {albums.map((album) => (
-            <Album key={album.AlbumID} album={album} />
-        ))}
-
+      {uniqueAlbums.map(album => (
+        <Album key={album.AlbumID} album={album} />  // Using AlbumID as key
+      ))}
     </div>
   );
 };
